@@ -4,6 +4,7 @@ public class Report {
 
 	private int bookingId;
 	private int driverId;
+	private int customerId;
 	private String issue;
 	
 	public int getBookingId() {
