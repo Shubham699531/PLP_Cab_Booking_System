@@ -12,6 +12,7 @@ public class Booking {
 	private String customerStatus;
 	private String tripStatus;
 	private double estimatedFare;
+	private double estimatedTime;
 	private double finalFare;
 	private int rating;
 	
