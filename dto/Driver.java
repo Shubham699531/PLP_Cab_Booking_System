@@ -11,6 +11,9 @@ public class Driver {
 	private long contactNo;
 	private String address;
 	private String vehicleNo;
+	private double rating;
+	private int noOfTrips;
+	
 	public int getId() {
 		return id;
 	}
