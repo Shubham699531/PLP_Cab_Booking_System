@@ -10,6 +10,7 @@ public class Driver {
 	private String gender;
 	private long contactNo;
 	private String address;
+	private String DL;
 	private String vehicleNo;
 	private double rating;
 	private int noOfTrips;
