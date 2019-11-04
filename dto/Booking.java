@@ -7,10 +7,12 @@ public class Booking {
 	private String destination;
 	private int vehicleSize;
 	private int driverId;
+	private int customerId;
 	private String driverStatus;
 	private String customerStatus;
 	private String tripStatus;
-	private double fare;
+	private double estimatedFare;
+	private double finalFare;
 	private int rating;
 	
 	public int getBookingId() {
