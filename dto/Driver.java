@@ -6,6 +6,9 @@ public class Driver {
 
 	private int id;
 	private String name;
+	private String email;
+	private String password;
+	private String status;
 	private Date dob;
 	private String gender;
 	private long contactNo;
