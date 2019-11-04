@@ -11,6 +11,7 @@ public class Customer {
 	private long contactNo;
 	private String email;
 	private String address;
+	private double wallet;
 	
 	public int getId() {
 		return id;
