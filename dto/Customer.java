@@ -10,6 +10,7 @@ public class Customer {
 	private String gender;
 	private long contactNo;
 	private String email;
+	private String password;
 	private String address;
 	private double wallet;
 	
