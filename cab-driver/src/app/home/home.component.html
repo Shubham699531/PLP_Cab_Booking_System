@@ -1,0 +1,44 @@
+<form (ngSubmit)='fetchDriver()' *ngIf=isHidden>
+    <div>
+        <label>Search By Email: </label><br>
+        <input type="email" name="email" [(ngModel)]=email>
+      </div>
+      <div>
+        <br>
+        <button type="submit">Find Driver</button>
+      </div>
+</form>
+      <div *ngIf='!isHidden'>
+       <table class="table table-bordered" >
+        <tr>
+          <th><h1>Driver Details</h1></th>
+        </tr>
+        <tr>
+          <td>Name: </td>  <td> {{driver.name}}</td>
+        </tr>
+        <tr>
+          <td>Date Of Birth: </td>  <td>{{driver.dob}}</td>
+        </tr>
+        <tr>
+          <td>Gender:</td>  <td> {{driver.gender}}</td>
+        </tr>
+        <tr>
+          <td>Contact No: </td>  <td>{{driver.contactNo}}</td>
+        </tr>
+        <tr>
+          <td>E-mail: </td>  <td>{{driver.email}}</td>
+        </tr>
+        <tr>
+          <td>Address: </td>  <td>{{driver.address}}</td>
+        </tr>
+        <tr>
+          <td>Vehicle No: </td>  <td>{{driver.vehicleNo}}</td>
+        </tr>
+        <tr>
+          <td>Vehicle Type: </td><td>{{driver.vehicleType}}</td>
+        </tr>
+        <!-- <td> {{customer.id}}</td>
+        <td>{{customer.name}}</td> -->
+      </table>
+      </div>
+

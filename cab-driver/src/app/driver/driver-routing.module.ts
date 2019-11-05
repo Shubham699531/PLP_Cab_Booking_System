@@ -1,0 +1,24 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { RegisterComponent } from '../register/register.component';
+import { CommonModule } from '@angular/common';
+import { HomeComponent } from '../home/home.component';
+import { LoginComponent } from '../login/login.component';
+import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
+import { PastTripsComponent } from '../past-trips/past-trips.component';
+
+const routes: Routes = [
+  {path:"register", component:RegisterComponent},
+  {path:"home", component:HomeComponent},
+  {path:"login", component:LoginComponent},
+  {path:"page-not-found", component:PageNotFoundComponent},
+  {path:"past-trips", component:PastTripsComponent},
+  {path: "", redirectTo:"/login", pathMatch:"full"},
+  {path:"**", redirectTo:"/login", pathMatch:"full"}
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes), CommonModule],
+  exports: [RouterModule]
+})
+export class DriverRoutingModule { }
