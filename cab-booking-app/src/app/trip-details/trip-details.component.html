@@ -1,0 +1,84 @@
+<div class="row">
+        <div class="col-xs-8" >
+            <form class="form-horizontal" #tripForm="ngForm" (ngSubmit)="estimatePrice()">
+                <div class="form-group">
+                    <label for="userid" class="control-label col-sm-4">UserId</label>
+                    <div class="col-sm-6">
+                        <input type="number" id="userid" name="userid" class="form-control" #userid=ngModel [(ngModel)]=tripdetails.userId>
+                    </div>
+                </div>
+                <div class="form-group">
+                  <label for="source" class="control-label col-sm-4">Source</label>
+                  <div class="col-sm-6">
+                    <select class="form-control" #source=ngModel [(ngModel)]=tripdetails.source name="source"> 
+                      <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="destination" class="control-label col-sm-4">Destination</label>
+                  <div class="col-sm-6">
+                    <select class="form-control" #destination=ngModel [(ngModel)]=tripdetails.destination name="destination">
+                      <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="modelType" class="control-label col-sm-4">Model</label>
+                  <div class="col-sm-6">
+                  
+                      <input type="radio" id="cartype-mini" value="mini" name="cartype" #mini=ngModel ngModel [(ngModel)]=tripdetails.model> Mini
+                    <br>
+                    
+                      <input type="radio" id="cartype-micro" value="micro" name="cartype"  #micro=ngModel ngModel [(ngModel)]=tripdetails.model> Micro
+                    
+                    <br>
+                        <input type="radio" id="cartype-sedan" value="sedan" name="cartype"  #sedan=ngModel ngModel [(ngModel)]=tripdetails.model> Sedan
+                    
+                    <br>
+                        <input type="radio" id="cartype-suv" value="suv" name="cartype"  #suv=ngModel ngModel [(ngModel)]=tripdetails.model> SUV
+                    
+                  </div>
+                </div>
+                <div class="col-sm-7"></div>
+                <div class="col-sm-2">
+                  <button class="btn btn-primary" type="submit">Estimate Price</button>
+                </div>
+              
+              </form>
+              
+        </div>
+        <div class="col-xs-4" *ngIf = "showPrice">
+            <div class="card" style="width: 18rem;" style="background-color: rgba(123, 123, 123, .3);">
+                <div class="card-body">
+                    <table class="table table-borderless">
+                        <tbody>
+                          <tr>
+                            <th scope="row">UserId:</th>
+                            <td>{{tripdetails.userId}}</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">Source:</th>
+                            <td>{{tripdetails.source}}</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">Destination</th>
+                            <td>{{tripdetails.destination}}</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Model</th>
+                              <td>{{tripdetails.model}}</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Estimated Price:</th>
+                              <td>{{fare}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+              </div>
+        </div>
+      </div>
+      
