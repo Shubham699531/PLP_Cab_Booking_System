@@ -1,7 +1,6 @@
 
 package com.cg.cabbookingapplication.rest;
 
-import java.util.List;
 
 import javax.validation.Valid;
 
@@ -29,11 +28,11 @@ public class CabBookingController {
 	private CabBookingService service;
 	
 	@GetMapping(value="/customer/{email}/{password}", produces="application/json")
-	public List<Customer> getCustomer(@PathVariable String email, @PathVariable String password) throws InvalidLoginDetails {
+	public Customer getCustomer(@PathVariable String email, @PathVariable String password){
 		return service.findCustomer(email, password);		
 	}
 	@GetMapping(value="/driver/{email}/{password}", produces="application/json")
-	public List<Driver> getDriver(@PathVariable String email, @PathVariable String password) throws InvalidLoginDetails {
+	public Driver getDriver(@PathVariable String email, @PathVariable String password){
 		return service.findDriver(email, password);	
 	}
 	@PostMapping(value="/addCustomer", consumes="application/json", produces = "application/json")

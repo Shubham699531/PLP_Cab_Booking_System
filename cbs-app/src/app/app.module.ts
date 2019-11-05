@@ -8,13 +8,17 @@ import { RegdriverComponent } from './regdriver/regdriver.component';
 import { RegcustomerComponent } from './regcustomer/regcustomer.component';
 import { NaviRoutingModule } from './navi/navi-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { CustomerComponent } from './customer/customer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegdriverComponent,
-    RegcustomerComponent
+    RegcustomerComponent,
+    CustomerComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule, FormsModule, NaviRoutingModule,HttpClientModule

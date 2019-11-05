@@ -1,3 +1,4 @@
+
 package com.cg.cabbookingapplication.service;
 
 import java.util.List;
@@ -31,13 +32,13 @@ public class CabBookingServiceImpl implements CabBookingService {
 	}
 
 	@Override
-	public List<Customer> findCustomer(String email, String password) throws InvalidLoginDetails {
+	public Customer findCustomer(String email, String password){
 
 		return dao.findCustomer(email, password);
 	}
 
 	@Override
-	public List<Driver> findDriver(String email, String password) throws InvalidLoginDetails {
+	public Driver findDriver(String email, String password){
 
 		return dao.findDriver(email, password);
 	}

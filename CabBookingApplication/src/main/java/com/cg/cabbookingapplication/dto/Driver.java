@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 @Entity
 @Table(name = "driver")
 @SequenceGenerator(name = "dseq", sequenceName = "driver_seq")
-@NamedQuery(name = "byCredential", query = "From Driver where email=:email and password=:password")
+@NamedQuery(name = "byCredential", query = "FROM Driver where email=:email and password=:password")
 public class Driver {
 
 	@Id
@@ -31,16 +31,34 @@ public class Driver {
 	private String vehicleNo;
 	private double rating = 0;
 	private String password;
+	private String vehicleType;
 	private int noOfTrips = 0;
-	private String status= "not confirmed";
+	private String driverStatus= "not confirmed";
 
-	public String getStatus() {
-		return status;
+	
+	public String getVehicleType() {
+		return vehicleType;
 	}
 
-	public void setStatus(String status) {
-		this.status = status;
+
+
+	public void setVehicleType(String vehicleType) {
+		this.vehicleType = vehicleType;
 	}
+
+
+
+	public String getDriverStatus() {
+		return driverStatus;
+	}
+
+
+
+	public void setDriverStatus(String driverStatus) {
+		this.driverStatus = driverStatus;
+	}
+
+
 
 	public Driver() {
 		// TODO Auto-generated constructor stub
@@ -49,7 +67,7 @@ public class Driver {
 	
 
 	public Driver(int id, String name, Date dob, String gender, long contactNo, String email, String address,
-			String vehicleNo, double rating, String password, int noOfTrips, String status) {
+			String vehicleNo, double rating, String password, int noOfTrips, String driverStatus) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -62,7 +80,7 @@ public class Driver {
 		this.rating = rating;
 		this.password = password;
 		this.noOfTrips = noOfTrips;
-		this.status = status;
+		this.driverStatus = driverStatus;
 	}
 
 	public int getId() {

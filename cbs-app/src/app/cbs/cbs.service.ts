@@ -22,12 +22,12 @@ export class CbsService {
 
   loginUser(email: String,password: String){
    
-      return this.http.get<Customer[]>("http://localhost:8880/cabbooking/customer/"+email+password);
+      return this.http.get<Customer>("http://localhost:8880/cabbooking/customer/"+email+"/"+password);
       
     }
  loginDriver(email: String,password: String){
 
-      return this.http.get<Driver[]>("http://localhost:8880/cabbooking/driver/"+email+password);
+      return this.http.get<Driver>("http://localhost:8880/cabbooking/driver/"+email+"/"+password);
       
     }
   }

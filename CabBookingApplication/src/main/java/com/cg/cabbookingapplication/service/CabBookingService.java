@@ -12,8 +12,8 @@ public interface CabBookingService {
 
 	Driver addDriver(Driver driver);
 
-	List<Customer> findCustomer(String email, String password) throws InvalidLoginDetails;
+	Customer findCustomer(String email, String password);
 
-	List<Driver> findDriver(String email, String password) throws InvalidLoginDetails;
+	Driver findDriver(String email, String password);
 
 }

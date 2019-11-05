@@ -9,6 +9,7 @@ export class Driver{
         public vehicleNo : String = "",
         public password : String = "",
         public vehicleType : String = "",
+        public noOfTrips : number = 0,
         public driverStatus : String = null
         ){}
     }

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CbsService } from '../cbs/cbs.service';
-import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
 import { Customer } from '../model/customer';
 import { Driver } from '../model/driver';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -12,8 +12,8 @@ import { Driver } from '../model/driver';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  driver : Driver[]=[];
-  customer : Customer[]=[];
+  driver : Driver;
+  customer : Customer;
 
   role : String;
   email : String;
@@ -22,24 +22,26 @@ export class LoginComponent implements OnInit {
   
   flag:boolean=false;
 
-  constructor(private service:CbsService) {
-   //this.log = new Login();
-   //this.role.push("Customer");
-   //this.role.push("Driver");
+  constructor(public http:HttpClient, private route:Router) {
+   this.driver = new Driver();
+   
    }
 
   ngOnInit() {
     
   }
 
-  login(){
-    if(this.role == "Customer")
-     
-    this.customer=this.service.loginUser(this.email, this.password);
-    if(this.customer != null)
-else
-   this.service.loginDriver(this.email,this.password).subscribe(p =>this.driver = p);
 
+loginUser(){
+  
+  this.http.get<Driver>("http://localhost:8880/cabbooking/driver/" +this.email +"/"+ this.password).subscribe(data => this.driver =data);
+ if(this.driver != null)
+   {this.flag= true;
+   this.route.navigate(["home"]);
+}
+   else{
+   alert("User not found");
+    }
   }
 
 
