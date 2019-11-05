@@ -3,6 +3,8 @@ import { Booking } from './model/booking.model';
 import { HttpClient } from '@angular/common/http';
 import { User } from './model/user.model';
 import { Customer } from './model/customer.model';
+import { CustomerRequirement } from './model/customer_requirement.model';
+import { AppComponent } from './app.component';
 
 
 
@@ -11,19 +13,33 @@ import { Customer } from './model/customer.model';
 })
 export class CustomerService {
 
+  isHiddenLogin : boolean;
+  isHiddenDashBoard: boolean;
   booking : Booking;
-  cust : Customer;
-  constructor(private httpClient : HttpClient) { }
-
-  verifyLogin(user : User){
-    //console.log(user.email);
-    return this.httpClient.post<Customer>("http://localhost:8180/cbs/login",user);
-    //console.log(this.cust);
-    //return this.cust;
+  customer : Customer;
+  constructor(private httpClient : HttpClient) { 
+    this.isHiddenLogin = false;
+    this.isHiddenDashBoard = true;
   }
 
-  getBookingDetails(user : User){
-    return this.httpClient.post<Booking>("http://localhost:8180/cbs/bookingService",user);
+
+  verifyLogin(user : User){
+    return this.httpClient.post<Customer>("http://localhost:8180/cbs/loginCustomer",user);
+  }
+
+  registerCustomer(customer : Customer){
+    return this.httpClient.post<Customer>("http://localhost:8180/cbs/signupCustomer",customer);
+  }
+
+  setCustomer(cust : Customer){
+    this.customer = cust;
+  }
+  getCustomer(){
+    return this.customer;
+  }
+
+  getBookingDetails(requirement : CustomerRequirement){
+    return this.httpClient.post<Booking>("http://localhost:8180/cbs/bookingService",requirement);
   // return this.httpClient.post<Customer>("http://localhost:8079/login",user);
   }
 

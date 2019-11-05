@@ -3,6 +3,7 @@ import { Booking } from '../model/booking.model';
 import { CustomerService } from '../customer.service';
 import { User } from '../model/user.model';
 import { Customer } from '../model/customer.model';
+import { CustomerRequirement } from '../model/customer_requirement.model';
 
 @Component({
   selector: 'app-booking',
@@ -14,20 +15,31 @@ export class BookingComponent implements OnInit {
   bookingDetails : Booking;
   user : User;
   customer  : Customer;
+  requirement : CustomerRequirement;
+  notLoggedIn : boolean;
   constructor(private service : CustomerService) {
     this.bookingDetails=new Booking();
     this.user= new User();
     this.customer = new Customer();
+    this.requirement = new CustomerRequirement();
+    console.log("Booking component constructor()");
    }
 
   ngOnInit() {
-    this.user.email = "wwww";
-    this.user.password = "wwww";
-    this.user.role = "customer";
-    
-    this.service.getBookingDetails(this.user).subscribe(data=>this.bookingDetails = data);
-    //this.bookingDetails = new Booking();
-   
+    console.log("Booking component ngOnInit()")
+    this.customer = this.service.getCustomer();
+    if(this.customer.id>0){
+      this.notLoggedIn = false;
+      console.log("Customer" + this.customer.id);
+      this.requirement.customerId = this.customer.id;  
+      this.requirement.source = "Vikhroli";
+      this.requirement.destination = "Ghatkopar";
+      this.requirement.vehicleSize = 4;
+      this.service.getBookingDetails(this.requirement).subscribe(data=>this.bookingDetails = data);
+      console.log(this.bookingDetails.source);
+    }
+    else
+      this.notLoggedIn = true;   
   }
 
   showBookingDetails(){

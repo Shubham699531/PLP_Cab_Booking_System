@@ -6,15 +6,17 @@ import { BookingComponent } from '../booking/booking.component';
 import { CommonModule } from '@angular/common';
 import { CustomerHomeComponent } from '../customer-home/customer-home.component';
 import { FindTripComponent } from '../find-trip/find-trip.component';
+import { SignupComponent } from '../signup/signup.component';
 
 const routes: Routes = [
- // {path: '', redirectTo:'login', pathMatch:'full'},
+  {path: '', redirectTo:'login', pathMatch:'full'},
   {path: 'login',component:LoginComponent},
+  {path: 'signup', component:SignupComponent},
   {path: 'history', component:HistoryComponent},
   {path: 'booking',component:BookingComponent},
   {path: 'find_trip', component:FindTripComponent},
   {path: 'customer_home', component:CustomerHomeComponent},
- // {path: '**', redirectTo:'login',pathMatch:'full'}
+  {path: '**', redirectTo:'login',pathMatch:'full'}
 ];
 
 @NgModule({

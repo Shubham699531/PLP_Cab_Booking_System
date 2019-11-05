@@ -7,4 +7,5 @@ export class Customer{
     public email : string;
     public password : string;
     public address : string;
+    public wallet : number;
 }

@@ -1,3 +1,65 @@
-<p>
-  signup works!
-</p>
+<div *ngIf="!signupSuccess">
+<form (ngSubmit)= 'addNewCustomer()' #addForm="ngForm">
+  <div class="form-group">
+    <label>Enter Your Name</label><br>
+    <input type="text" class="form-control" [(ngModel)]=customer.name name="name" placeholder="Enter your name" pattern="[a-zA-Z]{5,15}" #name=ngModel required>
+    <span *ngIf = "name.touched && name.invalid && (name.errors.required || name.errors.pattern)" class="alert-warning"> 
+      Invalid name or name cannot be empty</span>
+      <hr>
+  </div>
+
+   <div class="form-group">
+    <label>Enter Your Date Of Birth</label><br>
+    <input type="date" [(ngModel)]=customer.dob name="contact" #contact = ngModel  required>
+    <span *ngIf = "contact.touched && contact.invalid && (contact.errors.required)" class="alert-warning"> 
+      Invalid Date or date cannot be empty</span>
+      <hr>
+  </div> 
+
+   <div class="form-group">
+     <label>Gender: </label><br>
+  <label class="radio-inline"><input type="radio" [(ngModel)]=customer.gender value = "Male" name="optradio" checked>Male</label>
+  <label class="radio-inline"><input type="radio" [(ngModel)]=customer.gender value="Female" name="optradio">Female</label>
+  <label class="radio-inline"><input type="radio" [(ngModel)]=customer.gender value="Others" name="optradio">Others</label>
+<hr>  
+</div> 
+<div class="form-group">
+  <label>Enter Your Contact</label><br>
+  <input type="text"  class="form-control" [(ngModel)]=customer.contactNo name="contact" placeholder="9876543210" #contact = ngModel pattern="[7-9][0-9]{9}" required>
+  <span *ngIf = "contact.touched && contact.invalid && (contact.errors.required || contact.errors.pattern)" class="alert-warning"> 
+    Invalid contact or contact cannot be empty</span>
+    <hr>
+</div>
+  <div class="form-group">
+    <label>Enter Your E-Mail</label><br>
+    <input type="email"  class="form-control" [(ngModel)]=customer.email name="email" placeholder="abc@gmail.com" #email= ngModel pattern="[a-z0-9]+@[a-z]+.[a-z]{3,}" required>
+    <span *ngIf = "email.touched && email.invalid && (email.errors.required || email.errors.pattern)" class="alert-warning"> 
+      Invalid email or email cannot be empty</span>
+      <hr>
+  </div>
+  <div class="form-group">
+    <label>Enter Your Address</label><br>
+    <input type="text"  class="form-control" [(ngModel)]=customer.address name="address" placeholder="your address" #address = ngModel pattern="[A-Z][a-z]{5,}" required>
+    <span *ngIf = "address.touched && address.invalid && (address.errors.required || address.errors.pattern)" class="alert-warning"> 
+      Invalid address or address cannot be empty</span>
+      <hr>
+  </div>
+
+  <div class="form-group">
+    <label>Enter Your Password</label><br>
+    <input type="password"  class="form-control" [(ngModel)]=customer.password name="password" placeholder="your password" #password = ngModel pattern="[A-Za-z0-9@_!$]{8,15}" required>
+    <span *ngIf = "password.touched && password.invalid && (password.errors.required || password.errors.pattern)" class="alert-warning"> 
+      Invalid password or password cannot be empty</span>
+      <hr>
+  </div>
+
+  <div class="form-group">
+    <br>
+    <button class="btn btn-success" type="submit" [disabled] = "!addForm.valid">Register Driver</button>
+  </div>
+</form>
+</div>
+<div *ngIf="signupSuccess" class="container">
+  <h3>Registered!</h3>
+  <button (click)="login()">Login</button> &nbsp; to continue.
+</div>

@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FindTripComponent implements OnInit {
 
   constructor() { }
+  source : string;
+  destination : string;
+  type : string;
   locations : string[] = ["Thane","Juhu","Andheri","Versova"];
   model : string[] = ["Mini","Micro","SUV","Sedan"];
   estimate : string;
@@ -17,6 +20,8 @@ export class FindTripComponent implements OnInit {
   estimateFare(){
     this.estimate = "Rs." + 100+ "/-";
     console.log(this.estimate);
+    console.log(this.source + this.destination);
+
   }
   findTrip(){}
 

@@ -20,11 +20,14 @@ export class LoginComponent implements OnInit {
   constructor(private service : CustomerService, private route : Router){
     this.user = new User();
     this.customer = new Customer();
+    console.log("Login component constructor()");
   }
 
   ngOnInit() {
+    console.log("Login component ngOnInit()");
   }
 
+ 
   verifyLogin(){
     this.service.verifyLogin(this.user).subscribe(data=>this.customer=data);
     
@@ -36,13 +39,17 @@ export class LoginComponent implements OnInit {
     // }
     if(this.customer.id>0){
       console.log("login successfull");
-      //this.isHidden=false;
       this.invalidMsg = '';
-      this.route.navigate(['customer_home']);
+      this.service.setCustomer(this.customer);
+      this.route.navigate(['booking']);
     }
     else{
       console.log("INVALID CREDENTIALS!");
       this.invalidMsg = "INVALID CREDENTIALS!";
     }
+  }
+
+  signup(){
+    this.route.navigate(['signup']);
   }
 }
