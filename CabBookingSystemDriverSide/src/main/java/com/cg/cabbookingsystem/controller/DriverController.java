@@ -6,6 +6,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.cg.cabbookingsystem.dto.Booking;
 import com.cg.cabbookingsystem.dto.Driver;
+import com.cg.cabbookingsystem.dto.User;
 import com.cg.cabbookingsystem.dto.Vehicle;
+import com.cg.cabbookingsystem.exception.InvalidLoginException;
 import com.cg.cabbookingsystem.repo.DriverRepo;
 
 @Transactional
@@ -41,7 +44,14 @@ public class DriverController {
 	
 	@GetMapping(value = "/history")
 	public List<Booking> getHistoryOfDriver(@RequestParam int driverId){
-		return repo.getAllTripsOfADriver(driverId);
+		List<Booking> l = repo.getAllTripsOfADriver(driverId);
+		System.out.println("$$$$$$$" + l.get(0));
+		return l;
+	}
+	
+	@PostMapping(value = "/validate")
+	public Driver validateLogin(@RequestBody User user) {
+		return repo.validateLogin(user);
 	}
 
 }

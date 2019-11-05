@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.SequenceGenerator;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 @NamedQuery(name = "getPastRidesOfDriver", query = "FROM Booking WHERE driverId =:driverId")
@@ -14,7 +16,9 @@ public class Booking {
 	@Id
 	@GeneratedValue(generator = "booking_id_gen")
 	private int bookingId;
+	@Size(min = 2,max = 40)
 	private String source;
+	@Size(min = 2,max = 40)
 	private String destination;
 	private int vehicleSize;
 	private int driverId;

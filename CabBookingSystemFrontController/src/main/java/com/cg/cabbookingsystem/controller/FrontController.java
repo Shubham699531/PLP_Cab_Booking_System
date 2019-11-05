@@ -16,6 +16,7 @@ import org.springframework.web.client.RestTemplate;
 
 import com.cg.cabbookingsystem.dto.Booking;
 import com.cg.cabbookingsystem.dto.DriverModel;
+import com.cg.cabbookingsystem.dto.User;
 import com.cg.cabbookingsystem.dto.Vehicle;
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
@@ -50,7 +51,7 @@ public class FrontController {
 	
 	@PostMapping(value = "/showBooking")
 	public Booking showBookingDetails(@RequestBody Booking booking) {
-		return template.postForObject("http://localhost:8883/register/booking", booking, Booking.class);
+		return template.postForObject("http://localhost:8882/driver/booking", booking, Booking.class);
 	}
 	
 	@GetMapping(value = "/fetch")
@@ -61,6 +62,11 @@ public class FrontController {
 	@GetMapping(value="/history")
 	public List<Booking> getHistoryOfDriver(@RequestParam int driverId){
 		return Arrays.asList(template.getForObject("http://localhost:8882/driver/history?driverId=" + driverId, Booking[].class));
+	}
+	
+	@PostMapping(value = "/validate")
+	public DriverModel validateDriver(@RequestBody User user) {
+		return template.postForObject("http://localhost:8882/driver/validate", user, DriverModel.class);
 	}
 
 }
