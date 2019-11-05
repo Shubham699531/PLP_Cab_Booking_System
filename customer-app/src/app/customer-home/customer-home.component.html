@@ -1,0 +1,36 @@
+<nav class = "navbar navbar-inverse">
+  <div class="container-fluid" > 
+    <div class="navbar-header">
+      <a class="navbar-brand">Customer Service</a>
+    </div>
+
+    <ul class="nav navbar-nav"> -->
+      <button class="btn btn-success" type="submit">Past trips</button>
+    </ul>
+
+  </div>
+</nav>
+<form (ngSubmit) = "findTrip()">
+    <div class="form-group">
+      <label>Select source </label>
+      <select class="forms-control"  name="source" [(ngModel)]=source required>
+        <option *ngFor="let loc of locations" [value]="loc">{{loc}}</option>
+      </select>
+      
+    </div>
+    <div class="form-group">
+      <label>Destination</label>
+      <input class="form-control" type="text" [(ngModel)]=destination name="destination"><br>
+    </div>
+    <!-- <div >
+      <label>Select role</label><br>
+      <label class="radio-inline"><input type="radio" value="customer" [(ngModel)]=user.role name="role">Customer</label>
+      <label class="radio-inline"><input type="radio" value="driver" [(ngModel)]=user.role name="role">Driver</label>
+      <label class="radio-inline"><input type="radio" value="admin" [(ngModel)]=user.role name="role">Admin</label>
+    </div> -->
+    <div class="form-group">
+      <br>
+      <button class="btn btn-success" type="submit">Login</button>
+    </div>
+  </form>
+<router-outlet></router-outlet>

@@ -1,0 +1,30 @@
+<form (ngSubmit)="findTrip()">
+  <div class="form-group">
+    <label>Select source </label>
+    <select class="forms-control"  name="source" [(ngModel)]=source required>
+      <option value=null disabled>--Select pickup location--</option>
+      <option *ngFor="let loc of locations" [value]="loc">{{loc}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+      <label>Select destination </label>
+      <select class="forms-control"  name="destination" [(ngModel)]=destination required>
+        <option value=null disabled>--Select drop location--</option>
+        <option *ngFor="let loc of locations" [value]="loc">{{loc}}</option>
+      </select>
+  </div>
+  <div class="form-group">
+      <label>Select model </label>
+      <select class="forms-control"  name="type" [(ngModel)]=type required>
+        <option value=null disabled>--Select vehicle type--</option>
+        <option *ngFor="let m of model" [value]="m">{{m}}</option>
+      </select>
+    </div>
+    <button (click)="estimateFare()">Estimate</button>
+    {{estimate}}
+    <!-- <a (click)="estimateFare()">Estimate fare</a>{{estimate}} -->
+    <div class="form-group">
+        <br>
+        <button class="btn btn-success" type="submit">Confirm</button>
+    </div>
+</form>
