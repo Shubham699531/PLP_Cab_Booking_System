@@ -3,9 +3,7 @@ import { Booking } from './model/booking.model';
 import { HttpClient } from '@angular/common/http';
 import { User } from './model/user.model';
 import { Customer } from './model/customer.model';
-import { CustomerRequirement } from './model/customer_requirement.model';
-import { AppComponent } from './app.component';
-
+import { CustomerRequest } from './model/customer_requirement.model';
 
 
 @Injectable({
@@ -13,15 +11,32 @@ import { AppComponent } from './app.component';
 })
 export class CustomerService {
 
-  isHiddenLogin : boolean;
-  isHiddenDashBoard: boolean;
+  locations:string[] =[];
+  price:number;
+
   booking : Booking;
   customer : Customer;
+
   constructor(private httpClient : HttpClient) { 
-    this.isHiddenLogin = false;
-    this.isHiddenDashBoard = true;
+    this.customer = new Customer();
+    console.log("Service constructor");
   }
 
+  getPastTrips(){
+    return this.httpClient.post<Booking[]>("http://localhost:8180/cbs/pastTrips",this.customer);
+  }
+
+  getLocations(){
+    return this.httpClient.get<string[]>("http://localhost:8180/cbs/allLocations");
+  }
+
+  getEstimatePrice(details :CustomerRequest){
+    return this.httpClient.post<number>("http://localhost:8180/cbs/estimateFare",details);
+  }
+
+  saveBookingRequest(details : CustomerRequest){
+    return this.httpClient.post<CustomerRequest>("http://localhost:8180/cbs/saveCustomerRequest", details);
+  }
 
   verifyLogin(user : User){
     return this.httpClient.post<Customer>("http://localhost:8180/cbs/loginCustomer",user);
@@ -33,15 +48,15 @@ export class CustomerService {
 
   setCustomer(cust : Customer){
     this.customer = cust;
+    console.log(this.customer.id + "#" + this.customer.email);
   }
   getCustomer(){
     return this.customer;
   }
 
-  getBookingDetails(requirement : CustomerRequirement){
-    return this.httpClient.post<Booking>("http://localhost:8180/cbs/bookingService",requirement);
+  findACab(requirement : CustomerRequest){
+    return this.httpClient.post<Booking>("http://localhost:8180/cbs/findACab",requirement);
   // return this.httpClient.post<Customer>("http://localhost:8079/login",user);
   }
-
 
 }

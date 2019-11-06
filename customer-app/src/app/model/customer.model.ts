@@ -1,5 +1,5 @@
 export class Customer{
-    public id : number;
+    public id : number = -1;
     public name : string;
     public dob : Date;
     public gender : string;

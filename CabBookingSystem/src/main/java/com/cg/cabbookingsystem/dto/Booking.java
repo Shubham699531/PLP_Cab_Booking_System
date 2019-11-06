@@ -3,10 +3,12 @@ package com.cg.cabbookingsystem.dto;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 import javax.persistence.SequenceGenerator;
 
 @Entity
 @SequenceGenerator(name = "booking_id_seq",sequenceName = "seq_booking_id")
+@NamedQuery(name = "fetchByCustomerId", query = "FROM Booking WHERE customerId=:id")
 public class Booking {
 
 	@Id

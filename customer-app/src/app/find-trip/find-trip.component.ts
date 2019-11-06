@@ -18,7 +18,7 @@ export class FindTripComponent implements OnInit {
   }
 
   estimateFare(){
-    this.estimate = "Rs." + 100+ "/-";
+    this.estimate = "Rs." + 100+ "/-" + this.type;
     console.log(this.estimate);
     console.log(this.source + this.destination);
 

@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
       console.log("login successfull");
       this.invalidMsg = '';
       this.service.setCustomer(this.customer);
-      this.route.navigate(['booking']);
+      this.route.navigate(['customer_home']);
     }
     else{
       console.log("INVALID CREDENTIALS!");

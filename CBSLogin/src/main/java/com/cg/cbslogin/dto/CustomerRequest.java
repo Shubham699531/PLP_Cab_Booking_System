@@ -1,29 +1,30 @@
-package com.cg.cbsui.dto;
+package com.cg.cbslogin.dto;
 
 import java.util.List;
 
-public class CustomerRequirement {
+import org.springframework.stereotype.Component;
+
+@Component
+public class CustomerRequest {
 
 	private int customerId;
 	private String source;
 	private String destination;
 	private int vehicleSize;
+	private String model;
 	
 	
+	public String getModel() {
+		return model;
+	}
+	public void setModel(String model) {
+		this.model = model;
+	}
 	public int getCustomerId() {
 		return customerId;
 	}
 	public void setCustomerId(int customerId) {
 		this.customerId = customerId;
-	}
-	public CustomerRequirement() {
-	}
-	public CustomerRequirement(int customerId,String source, String destination, int vehicleSize) {
-		super();
-		this.customerId = customerId;
-		this.source = source;
-		this.destination = destination;
-		this.vehicleSize = vehicleSize;
 	}
 	public String getSource() {
 		return source;

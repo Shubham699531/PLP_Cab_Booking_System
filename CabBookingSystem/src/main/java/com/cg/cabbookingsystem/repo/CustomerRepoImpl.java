@@ -9,7 +9,8 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 import com.cg.cabbookingsystem.dto.Booking;
-import com.cg.cabbookingsystem.dto.CustomerRequirement;
+import com.cg.cabbookingsystem.dto.Customer;
+import com.cg.cabbookingsystem.dto.CustomerRequest;
 import com.cg.cabbookingsystem.dto.Location;
 import com.cg.cabbookingsystem.dto.Vehicle;
 
@@ -20,7 +21,7 @@ public class CustomerRepoImpl implements CustomerRepo {
 	EntityManager mgr;
 	
 	@Override
-	public List<Vehicle> getVehicles(CustomerRequirement req) {
+	public List<Vehicle> getVehicles(CustomerRequest req) {
 		List<Vehicle> vehicles =  mgr.createNamedQuery("fetchBySize", Vehicle.class).setParameter("size", req.getVehicleSize()).getResultList();
 		Location location;
 		Location source;
@@ -53,6 +54,11 @@ public class CustomerRepoImpl implements CustomerRepo {
 	@Override
 	public List<Vehicle> getAllVehicles() {
 		return mgr.createNamedQuery("fetchAll", Vehicle.class).getResultList();
+	}
+
+	@Override
+	public List<Booking> pastTrips(Customer customer) {
+		return mgr.createNamedQuery("fetchByCustomerId", Booking.class).setParameter("id", customer.getId()).getResultList();
 	}
 	
 	

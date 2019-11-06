@@ -1,20 +1,21 @@
 <form (ngSubmit)="findTrip()">
-  <div class="form-group">
-    <label>Select source </label>
+      
+  <div class="dropdown">
+    <label>Select source </label><br>
     <select class="forms-control"  name="source" [(ngModel)]=source required>
-      <option value=null disabled>--Select pickup location--</option>
+      <option  value=null disabled >--Select pickup location--</option>
       <option *ngFor="let loc of locations" [value]="loc">{{loc}}</option>
     </select>
   </div>
   <div class="form-group">
-      <label>Select destination </label>
+      <label>Select destination </label><br>
       <select class="forms-control"  name="destination" [(ngModel)]=destination required>
         <option value=null disabled>--Select drop location--</option>
         <option *ngFor="let loc of locations" [value]="loc">{{loc}}</option>
       </select>
   </div>
   <div class="form-group">
-      <label>Select model </label>
+      <label>Select model </label><br>
       <select class="forms-control"  name="type" [(ngModel)]=type required>
         <option value=null disabled>--Select vehicle type--</option>
         <option *ngFor="let m of model" [value]="m">{{m}}</option>

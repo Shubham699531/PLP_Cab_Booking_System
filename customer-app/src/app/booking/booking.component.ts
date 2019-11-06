@@ -3,7 +3,7 @@ import { Booking } from '../model/booking.model';
 import { CustomerService } from '../customer.service';
 import { User } from '../model/user.model';
 import { Customer } from '../model/customer.model';
-import { CustomerRequirement } from '../model/customer_requirement.model';
+import { CustomerRequest } from '../model/customer_requirement.model';
 
 @Component({
   selector: 'app-booking',
@@ -15,13 +15,13 @@ export class BookingComponent implements OnInit {
   bookingDetails : Booking;
   user : User;
   customer  : Customer;
-  requirement : CustomerRequirement;
+  requirement : CustomerRequest;
   notLoggedIn : boolean;
   constructor(private service : CustomerService) {
     this.bookingDetails=new Booking();
     this.user= new User();
     this.customer = new Customer();
-    this.requirement = new CustomerRequirement();
+    this.requirement = new CustomerRequest();
     console.log("Booking component constructor()");
    }
 
