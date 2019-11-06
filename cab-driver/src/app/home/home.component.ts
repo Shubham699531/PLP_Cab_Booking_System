@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CabDriver } from '../model/driver_model';
 import { DriverService } from '../driver.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,17 +13,18 @@ export class HomeComponent implements OnInit {
   email : String ;
   isHidden : boolean =true;
 
-  constructor(private service: DriverService) { 
+  constructor(private service: DriverService, private router:Router) { 
     this.driver = new CabDriver();
   }
 
   ngOnInit() {
+    this.email = this.service.userName;
+    this.service.fetchDriver(this.email).subscribe(data => this.driver=data);
   }
 
-  fetchDriver(){
-    this.service.fetchDriver(this.email).subscribe(data => this.driver=data);
-    if(this.driver.name != ""){
-      this.isHidden=false;
+  viewPastTrips(){
+    if(this.service.userName != ""){
+      this.router.navigate(['/past-trips']);
     }
   }
 

@@ -1,5 +1,5 @@
 export class User{
-    public email : string;
-    public password : string;
-    public role : string;
+    public email : String;
+    public password : String;
+    public role : String;
 }

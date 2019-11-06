@@ -3,14 +3,13 @@ import { User } from '../model/user.model';
 import { CabDriver } from '../model/driver_model';
 import { DriverService } from '../driver.service';
 import { Router } from '@angular/router';
-import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
   user : User;
   driver : CabDriver;
   invalidMsg : String;
@@ -20,22 +19,33 @@ export class LoginComponent implements OnInit {
     this.driver = new CabDriver();
   }
 
-  ngOnInit() {
-  }
+  // ngOnInit() {
+    
+  // }
 
   verifyLogin(){
-     this.service.verifyLogin(this.user).subscribe(data =>this.driver = data);
+    // if(this.service.userName != ""){
+    //   this.user.email = this.service.userName;
+    // }
+    //if(this.user.role == "driver"){
+     this.service.verifyLogin(this.user).subscribe(data=>this.driver=data);
+     //console.log(this.driver.driverId);
+     //console.log(this.driver.password);
 
     if(this.driver.driverId > 0){
-      console.log("login successfull");
+      //console.log("login successfull");
+      this.service.userName = this.user.email;
       this.invalidMsg = '';
       this.router.navigate(['home']);
     }
     else{
-      this.router.navigate(['register']);
-      console.log("INVALID CREDENTIALS!");
-      this.invalidMsg = "INVALID CREDENTIALS!";
+      this.invalidMsg = "Invalid Credentials!";
     }
+  //}
   }
+    signup(){
+      this.router.navigate(['register']);
+    }
+      
 
 }

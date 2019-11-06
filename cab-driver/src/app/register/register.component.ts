@@ -12,16 +12,17 @@ export class RegisterComponent implements OnInit {
   driver: CabDriver;
 
   constructor(private service: DriverService, private router : Router) { 
+    this.driver = new CabDriver();
   }
 
   ngOnInit() {
-    this.driver = new CabDriver();
   }
 
   addNewDriver(){
-    this.service.addNewDriver(this.driver).subscribe();
+    this.service.addNewDriver(this.driver).subscribe(data =>this.driver = data);
+    this.service.userName = this.driver.email ;
     this.driver = new CabDriver();
-    this.router.navigate(['/home']);
+    this.router.navigate(['/login']);
   }
 
 }

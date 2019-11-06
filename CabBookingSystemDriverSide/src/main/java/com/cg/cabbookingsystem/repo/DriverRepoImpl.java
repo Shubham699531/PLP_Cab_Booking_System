@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.cg.cabbookingsystem.dto.Booking;
-import com.cg.cabbookingsystem.dto.Driver;
+import com.cg.cabbookingsystem.dto.DriverModel;
 import com.cg.cabbookingsystem.dto.User;
 import com.cg.cabbookingsystem.dto.Vehicle;
 import com.cg.cabbookingsystem.exception.InvalidLoginException;
@@ -25,11 +25,16 @@ public class DriverRepoImpl implements DriverRepo {
 	}
 	
 	@Override
-	public Driver getListOfDrivers(List<Vehicle> vehicles) {
-		List<Driver> drivers = new ArrayList<Driver>();
-		Driver driver = new Driver();
+	public DriverModel save(DriverModel driver) {
+		mgr.persist(driver);
+		return driver;
+	}
+	@Override
+	public DriverModel getListOfDrivers(List<Vehicle> vehicles) {
+		List<DriverModel> drivers = new ArrayList<DriverModel>();
+		DriverModel driver = new DriverModel();
 		for (Vehicle vehicle : vehicles) {
-			drivers.add(mgr.find(Driver.class, vehicle.getVehicleNo()));
+			drivers.add(mgr.find(DriverModel.class, vehicle.getVehicleNo()));
 		}
 		driver = drivers.get(1);
 		driver.setDriverStatus("Booked");
@@ -48,12 +53,24 @@ public class DriverRepoImpl implements DriverRepo {
 	}
 
 	@Override
-	public Driver validateLogin(User user) {
-		Driver driver = null;
+	public DriverModel validateLogin(User user) {
+		DriverModel driver = null;
 		try {
-			 driver = mgr.createNamedQuery("validateLogin",Driver.class).setParameter("email", user.getEmail()).setParameter("password", user.getPassword()).getSingleResult();
+			 driver = mgr.createNamedQuery("validateLogin",DriverModel.class).setParameter("email", user.getEmail()).setParameter("password", user.getPassword()).getSingleResult();
 		} catch (Exception e ) {
-			driver = new Driver();
+			driver = new DriverModel();
+			driver.setDriverId(-1);
+		}
+		return driver;
+	}
+	
+	@Override
+	public DriverModel fetchByEmail(String email) {
+		DriverModel driver = null;
+		try {
+			driver =  mgr.createNamedQuery("fetchByEmail", DriverModel.class).setParameter("email", email).getSingleResult();
+		} catch (Exception e) {
+			driver = new DriverModel();
 			driver.setDriverId(-1);
 		}
 		return driver;

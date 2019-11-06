@@ -1,4 +1,4 @@
-<form (ngSubmit)='fetchDriver()' *ngIf=isHidden>
+<!-- <form (ngSubmit)='fetchDriver()' *ngIf=isHidden>
     <div>
         <label>Search By Email: </label><br>
         <input type="email" name="email" [(ngModel)]=email>
@@ -6,9 +6,9 @@
       <div>
         <br>
         <button type="submit">Find Driver</button>
-      </div>
-</form>
-      <div *ngIf='!isHidden'>
+      </div> 
+</form> -->
+      <div >
        <table class="table table-bordered" >
         <tr>
           <th><h1>Driver Details</h1></th>
@@ -34,11 +34,14 @@
         <tr>
           <td>Vehicle No: </td>  <td>{{driver.vehicleNo}}</td>
         </tr>
-        <tr>
+        <!-- <tr>
           <td>Vehicle Type: </td><td>{{driver.vehicleType}}</td>
-        </tr>
+        </tr> -->
         <!-- <td> {{customer.id}}</td>
         <td>{{customer.name}}</td> -->
       </table>
+      </div>
+      <div>
+        <button class="btn btn-success" (click)="viewPastTrips()">Past Trips</button>
       </div>
 

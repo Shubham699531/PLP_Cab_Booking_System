@@ -45,7 +45,7 @@ public class FrontController {
 	
 	@PostMapping(value = "/save")
 	public DriverModel saveDriver(@RequestBody DriverModel driver) {
-		DriverModel saveDriver = template.postForObject("http://localhost:8883/register", driver, DriverModel.class);
+		DriverModel saveDriver = template.postForObject("http://localhost:8882/driver", driver, DriverModel.class);
 		return saveDriver;
 	}
 	
@@ -56,7 +56,7 @@ public class FrontController {
 	
 	@GetMapping(value = "/fetch")
 	public DriverModel getDriverByEmail(@RequestParam String email) {
-		return template.getForObject("http://localhost:8883/register/fetch?email=" + email, DriverModel.class);
+		return template.getForObject("http://localhost:8882/driver/fetch?email=" + email, DriverModel.class);
 	}
 	
 	@GetMapping(value="/history")

@@ -2,6 +2,7 @@ package com.cg.cabbookingsystem.dto;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.SequenceGenerator;
@@ -10,11 +11,11 @@ import javax.validation.constraints.Size;
 
 @Entity
 @NamedQuery(name = "getPastRidesOfDriver", query = "FROM Booking WHERE driverId =:driverId")
-@SequenceGenerator(name = "BOOKING_ID_GEN", sequenceName = "booking_id_gen")
+//@SequenceGenerator(name = "BOOKING_ID_GEN", sequenceName = "booking_id_gen")
 public class Booking {
 
 	@Id
-	@GeneratedValue(generator = "booking_id_gen")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int bookingId;
 	@Size(min = 2,max = 40)
 	private String source;

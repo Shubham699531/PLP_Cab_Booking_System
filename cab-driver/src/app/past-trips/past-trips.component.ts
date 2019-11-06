@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DriverService } from '../driver.service';
 import { Booking } from '../model/booking.model';
+import { CabDriver } from '../model/driver_model';
 
 @Component({
   selector: 'app-past-trips',
@@ -8,16 +9,28 @@ import { Booking } from '../model/booking.model';
   styleUrls: ['./past-trips.component.css']
 })
 export class PastTripsComponent implements OnInit {
-  driverId:number;
-  history : Array<Booking> ;
-  temporary : Booking[] = [];
+  userName:String;
+  history : Booking[] ;
   noBookingsMsg : String;
   noRides : boolean ;
+  invalidMsg : String ="";
+  driver : CabDriver = new CabDriver();
 
-  constructor(private service: DriverService) {}
+  constructor(private service: DriverService) {
+    
+  }
 
   ngOnInit() {
-    this.service.fetchAll(this.driverId).subscribe(data =>this.history=data);
+    console.log(this.service.userName);
+    this.service.fetchDriver(this.service.userName).subscribe(data=>this.driver=data);
+    console.log(this.driver.driverId)
+    if(this.driver.driverId >0){
+      this.service.fetchAll(this.driver.driverId).subscribe(data =>this.history=data);
+    }
+    else{
+      this.invalidMsg = "No Rides Yet";
+    }
+    
   }
   // show(){
   //   this.service.fetchAll(this.driverId).subscribe(data =>this.history=data);
