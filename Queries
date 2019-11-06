@@ -1,28 +1,5 @@
 # PLP_Cab_Booking_App
 
-SQL> create table location (name varchar2(20), xcoordinate number, ycoordinate number);
-
-Table created.
-
-SQL> insert into location values('Juhu',0,0);
-
-1 row created.
-
-SQL> insert into location values('Goregaon',0,5);
-
-1 row created.
-
-SQL> insert into location values('Kandivali',0,10);
-
-1 row created.
-
-SQL> insert into location values('Borivali',0,15);
-
-1 row created.
-
-SQL> delete from location;
-
-4 rows deleted.
 
 SQL> insert into location values('Powai',40,12);
 
