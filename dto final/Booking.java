@@ -24,6 +24,7 @@ public class Booking {
 	private int estimatedTime;
 	private int finalTime;
 	private int rating;
+	private String issues;
 
 	public Booking() {
 	}
