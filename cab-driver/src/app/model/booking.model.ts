@@ -6,8 +6,9 @@ export class Booking{
     public driverId : number;
     public customerId : number;
     public driverStatus: string;
-    public customerStatus: string;
     public tripStatus : string;
-    public fare : number;
+    public estimatedFare : number;
+    public estimatedTime : number;
+    public finalFare : number;
     public rating : number;
 }

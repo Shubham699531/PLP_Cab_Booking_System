@@ -1,14 +1,15 @@
 export class CabDriver{
         public driverId : number;
-        public name : String ;
-        public password:String ;
+        public name : string ="";
+        public password:string ;
         public dob : Date ;
-        public gender : String ;
-        public contactNo : String ;
-        public email : String ;
-        public address : String ;
-        public vehicleNo : String ;
-        public vehicleType : String ;
-        public driverStatus : String ;
+        public gender : string ;
+        public contactNo : string ;
+        public email : string ;
+        public address : string ;
+        public vehicleNo : string ;
+        public vehicleType : string ;
+        public driverStatus : string ;
+        public drivingLicense: string;
         constructor(){}   
 }

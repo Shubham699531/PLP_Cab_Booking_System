@@ -11,7 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { PastTripsComponent } from './past-trips/past-trips.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { AboutComponent } from './components/about/about.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { AboutComponent } from './components/about/about.component';
     HomeComponent,
     PastTripsComponent,
     PageNotFoundComponent,
-    AboutComponent
+    LogoutComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule, DriverRoutingModule, CommonModule

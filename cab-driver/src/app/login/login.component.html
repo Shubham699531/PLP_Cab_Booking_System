@@ -1,61 +1,73 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <meta http-equiv="refresh" content="5" > 
-  <title>Document</title>
-</head>
-<body>
-<div class="jumbotron container" >
-  <h1>Cab Booking System</h1>
-</div>
-<div class="container-fluid">
-  <form (ngSubmit) = "verifyLogin()">
-    <div class="form-group">
-      <label>Email</label><br>
-      <input class="form-control" type="text" [(ngModel)]=user.email name="email"><br>
-    </div>
-    <div class="form-group">
-      <label>Password</label>
-      <input class="form-control" type="password" [(ngModel)]=user.password name="password"><br>
-    </div>
-    <div >
-      <label>Select role</label><br>
-      <label class="radio-inline"><input type="radio" value="customer" [(ngModel)]=user.role name="role">Customer</label>
-      <label class="radio-inline"><input type="radio" value="driver" [(ngModel)]=user.role name="role">Driver</label>
-      <label class="radio-inline"><input type="radio" value="admin" [(ngModel)]=user.role name="role">Admin</label>
-    </div>
-    <div class="form-group">
-      <br>
-      <button class="btn btn-success" type="submit">Login</button><br>{{invalidMsg}}
-    </div>
-  </form>
-</div>
-</body>
-</html> -->
 
-<form (ngSubmit) = "verifyLogin()">
+
+<!-- <form (ngSubmit) = "verifyLogin()" #addForm="ngForm">
   <div class="form-group">
-    <label>Email</label><br>
-    <input class="form-control" type="text" [(ngModel)]=user.email name="email"><br>
+    <label>User Name</label>
+    <input class="form-control" type="text" [(ngModel)]=user.email name="email" #email= ngModel pattern="[a-z0-9]+@[a-z]+.[a-z]{3,}" required>
+    <span *ngIf = "email.touched && email.invalid && (email.errors.required || email.errors.pattern)" class="alert-warning"> 
+      <p style="color:red" >Invalid User Name</p></span>
+      <hr>
   </div>
   <div class="form-group">
     <label>Password</label>
-    <input class="form-control" type="password" [(ngModel)]=user.password name="password"><br>
+    <input class="form-control" type="password" [(ngModel)]=user.password name="password" #password= ngModel pattern="[A-Za-z0-9@_!$]{8,15}" required>
+    <span *ngIf = "password.touched && password.invalid && (password.errors.required || password.errors.pattern)" class="alert-warning"> 
+      <p style="color:red " >Invalid Password</p></span>
+    <br>
   </div>
   <div >
     <label>Select role</label><br>
-    <!-- <label class="radio-inline"><input type="radio" value="customer" [(ngModel)]=user.role name="role">Customer</label> -->
-    <label class="radio-inline"><input type="radio" value="driver" [(ngModel)]=user.role name="role">Driver</label>
-    <!-- <label class="radio-inline"><input type="radio" value="admin" [(ngModel)]=user.role name="role">Admin</label> -->
+     <label class="radio-inline"><input type="radio" value="customer" [(ngModel)]=user.role name="role">Customer</label> 
+    <label class="radio-inline"><input type="radio" value="driver" [(ngModel)]=user.role name="role" required>Driver</label>
+     <label class="radio-inline"><input type="radio" value="admin" [(ngModel)]=user.role name="role">Admin</label> 
   </div>
   <div class="form-group">
     <br>
-    <button class="btn btn-success" type="submit">Login</button> &nbsp;
+    <button class="btn btn-success" type="submit" [disabled] = "!addForm.valid">Login</button> &nbsp;
   </div>
-</form>
-Not a user?
-    <button class="btn btn-success" (click)="signup()">Register</button>
-    <br>{{invalidMsg}}
+</form><p style="font-size: 20px; color: blue;">Not a user yet?
+    <button class="btn btn-success" (click)="signup()"> &nbsp; Register</button>
+  </p>
+    <br>{{invalidMsg}} -->
+
+    <div class="bgimg" >
+      <div class="card" style="width: 300px; position: absolute; top: 120px ; left:400px; background-color: rgba(222, 222, 222, .5); border-radius: 10px;">
+          <div class="card-body">
+            <h5 class="card-title" style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >LOGIN</h5>
+            <div class="row">
+              <div class="col-xs-2"></div>
+              <div class="col-xs-8">
+                  <form (ngSubmit) = "verifyLogin()" #loginForm=ngForm>
+                      <div class="form-group">
+                        <label>Email</label><br>
+                        <input class="form-control" type="text" #email=ngModel [(ngModel)]=user.email name="email"  pattern="[a-zA-z.0-9]{3,}@[a-z]{3,}.[a-z]{2,}">
+                        <span *ngIf="email.touched && email.invalid" class="alert-danger" style="text-align: center;">invalid email Id!</span>
+                        <br>
+                      </div>
+                      <div class="form-group">
+                        <label>Password</label>
+                        <input class="form-control" type="password" #password=ngModel [(ngModel)]=user.password name="password" pattern="[a-zA-Z@_0-9]{8,15}" >
+                        <span *ngIf="password.touched && password.invalid" class="alert-danger" style="text-align: center;">invalid password!</span>
+                        <br>
+                      </div>
+                      <div >
+                        <label>Select role</label><br>
+                        <label class="radio-inline"><input type="radio" value="customer" [(ngModel)]=user.role name="role" >Driver</label><br>
+                        <!-- <label class="radio-inline"><input type="radio" value="admin" [(ngModel)]=user.role name="role" >Admin</label> -->
+                      </div>
+                      <div class="form-group" >
+                        <br>
+                        <div class="row">
+                          <div class="col-xs-9"></div>
+                          <div class="col-xs-3">
+                              <button class="btn btn-success" type="submit" [disabled]="loginForm.invalid">Login</button>
+                          </div>
+                        </div>
+                        </div>
+                    </form>
+                   <div class="col-xs-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

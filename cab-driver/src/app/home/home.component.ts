@@ -10,20 +10,28 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   driver: CabDriver;
-  email : String ;
+  email : string ;
   isHidden : boolean =true;
+  invalidMsg : string;
 
   constructor(private service: DriverService, private router:Router) { 
     this.driver = new CabDriver();
   }
 
   ngOnInit() {
-    this.email = this.service.userName;
-    this.service.fetchDriver(this.email).subscribe(data => this.driver=data);
+
+    if(sessionStorage.getItem("userName") != null){
+      this.service.fetchDriver(sessionStorage.getItem("userName")).subscribe(data =>this.driver=data);
+    }
+    else{
+      this.invalidMsg = "You must be logged-in first!";
+      this.router.navigate(['login']);
+    }
+    
   }
 
   viewPastTrips(){
-    if(this.service.userName != ""){
+    if(sessionStorage.getItem("userName") != null){
       this.router.navigate(['/past-trips']);
     }
   }

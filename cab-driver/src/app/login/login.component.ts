@@ -27,20 +27,35 @@ export class LoginComponent {
     // if(this.service.userName != ""){
     //   this.user.email = this.service.userName;
     // }
-    //if(this.user.role == "driver"){
-     this.service.verifyLogin(this.user).subscribe(data=>this.driver=data);
+    //if(this.user.role == "driver")
+    
+      this.service.verifyLogin(this.user).subscribe(data=>{this.driver=data;
+        sessionStorage.setItem("userName",this.driver.email);
+        sessionStorage.setItem("driverId",this.driver.driverId.toString());
+        if(this.driver.driverId > 0){
+          //console.log("login successfull");
+          this.service.currentUser = this.driver;
+          this.invalidMsg = '';
+          this.router.navigate(['home']);
+        }
+        else{
+          this.invalidMsg = "Invalid Credentials!";
+        }
+     
+    });
+     
      //console.log(this.driver.driverId);
      //console.log(this.driver.password);
 
-    if(this.driver.driverId > 0){
-      //console.log("login successfull");
-      this.service.userName = this.user.email;
-      this.invalidMsg = '';
-      this.router.navigate(['home']);
-    }
-    else{
-      this.invalidMsg = "Invalid Credentials!";
-    }
+    // if(this.driver.driverId > 0){
+    //   //console.log("login successfull");
+    //   this.service.currentUser = this.driver;
+    //   this.invalidMsg = '';
+    //   this.router.navigate(['home']);
+    // }
+    // else{
+    //   this.invalidMsg = "Invalid Credentials!";
+    // }
   //}
   }
     signup(){

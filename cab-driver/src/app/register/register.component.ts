@@ -19,10 +19,27 @@ export class RegisterComponent implements OnInit {
   }
 
   addNewDriver(){
-    this.service.addNewDriver(this.driver).subscribe(data =>this.driver = data);
-    this.service.userName = this.driver.email ;
-    this.driver = new CabDriver();
-    this.router.navigate(['/login']);
+    this.service.addNewDriver(this.driver).subscribe(data =>{this.driver = data;
+      if(this.driver.driverId > 0){
+        sessionStorage.setItem("userName", this.driver.email);
+        sessionStorage.setItem("driverId", this.driver.driverId.toString());
+      }
+      else{
+        alert("Registration Unsuccessful!");
+      }
+   });
+   if(sessionStorage.getItem("userName") != null){
+      this.driver = new CabDriver();
+      this.router.navigate(['/login']);
   }
+  }
+
+  getToday(): string {
+    return new Date().toISOString().split('T')[0];
+ }
+
+ getMinDate(){
+  return new Date("1900-01-01").toISOString().split('T')[0];
+ }
 
 }

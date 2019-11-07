@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DriverService } from '../driver.service';
 import { Booking } from '../model/booking.model';
 import { CabDriver } from '../model/driver_model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-past-trips',
@@ -11,25 +12,33 @@ import { CabDriver } from '../model/driver_model';
 export class PastTripsComponent implements OnInit {
   userName:String;
   history : Booking[] ;
-  noBookingsMsg : String;
   noRides : boolean ;
   invalidMsg : String ="";
   driver : CabDriver = new CabDriver();
 
-  constructor(private service: DriverService) {
+  constructor(private service: DriverService, private router: Router) {
     
   }
 
   ngOnInit() {
-    console.log(this.service.userName);
-    this.service.fetchDriver(this.service.userName).subscribe(data=>this.driver=data);
-    console.log(this.driver.driverId)
-    if(this.driver.driverId >0){
-      this.service.fetchAll(this.driver.driverId).subscribe(data =>this.history=data);
+    if(sessionStorage.getItem("userName") != null){
+      //this.service.fetchDriver(sessionStorage.getItem("userName")).subscribe(data =>this.driver=data);
+    //if(+sessionStorage.getItem("driverId") > 0){
+      this.service.fetchAll(+sessionStorage.getItem("driverId")).subscribe(data =>{this.history=data;
+      if(this.history.length == 0){
+        this.invalidMsg = "No Rides Yet";
+        this.noRides = true;
+      }
+    else{
+      this.noRides = false;
+    }
+    });
     }
     else{
-      this.invalidMsg = "No Rides Yet";
+      this.invalidMsg = "You must be logged-in first!";
+      this.router.navigate(['login']);
     }
+    
     
   }
   // show(){

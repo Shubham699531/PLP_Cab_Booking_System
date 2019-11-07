@@ -8,7 +8,7 @@ import { Booking } from './model/booking.model';
   providedIn: 'root'
 })
 export class DriverService {
-  userName : String = "";
+  currentUser : CabDriver = new CabDriver();
 
   constructor(private http: HttpClient) {
   }

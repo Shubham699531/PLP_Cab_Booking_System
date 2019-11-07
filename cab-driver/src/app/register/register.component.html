@@ -1,25 +1,37 @@
-<form (ngSubmit)= 'addNewDriver()' #addForm="ngForm">
-    <div class="form-group">
-      <label>Enter Your Name</label><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4"></div>
+    <div class="col-xs-4"><h2>Regestration Form</h2></div>
+    <div class="col-xs-4"></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-3">
+    </div>
+    <div class="col-xs-6">
+<form (ngSubmit)= 'addNewDriver()' #addForm="ngForm" style="margin: 15px;">
+    <div class="form-group" >
+      <label>Enter Your Name: </label><br>
       <input type="text" class="form-control" [(ngModel)]=driver.name name="name" placeholder="Enter your name" pattern="[a-zA-Z]{5,15}" #name=ngModel required>
       <span *ngIf = "name.touched && name.invalid && (name.errors.required || name.errors.pattern)" class="alert-warning"> 
-        Invalid name or name cannot be empty</span>
+        <p class="error-div" style="color:red " >Invalid Name</p></span>
         <hr>
     </div>
 
     <div class="form-group">
-      <label>Enter Your Password</label><br>
-      <input type="password"  class="form-control" [(ngModel)]=driver.password name="password" placeholder="your password" #password = ngModel pattern="[a-z0-9]+" required>
+      <label>Enter Your Password: </label><br>
+      <input type="password"  class="form-control" [(ngModel)]=driver.password name="Password" placeholder="Your password" #password = ngModel pattern="[A-Za-z0-9@_!$]{8,15}" required>
       <span *ngIf = "password.touched && password.invalid && (password.errors.required || password.errors.pattern)" class="alert-warning"> 
-        Invalid password or password cannot be empty</span>
+        <p class="error-div" style="color:red " >Invalid Password</p></span>
         <hr>
     </div>
   
      <div class="form-group">
-      <label>Enter Your Date Of Birth</label><br>
-      <input type="date" [(ngModel)]=driver.dob name="contact" #contact = ngModel  required>
-      <span *ngIf = "contact.touched && contact.invalid && (contact.errors.required)" class="alert-warning"> 
-        Invalid contact or contact cannot be empty</span>
+      <label>Enter Your Date Of Birth: </label><br>
+      <input type="date" [(ngModel)]=driver.dob name="dob" #dob = ngModel  [max]="getToday()" [min]="getMinDate()" required>
+      <span *ngIf = "dob.touched && dob.invalid && (dob.errors.required)" class="alert-warning"> 
+        <p class="error-div" style="color:red " >Invalid Date Of Birth</p></span>
         <hr>
     </div> 
   
@@ -31,34 +43,42 @@
   <hr>  
   </div> 
     <div class="form-group">
-      <label>Enter Your E-Mail</label><br>
-      <input type="email"  class="form-control" [(ngModel)]=driver.email name="email" placeholder="abc@gmail.com" #email= ngModel pattern="[a-z0-9]+@[a-z]+.[a-z]{3,}" required>
+      <label>Enter Your E-Mail:</label><br>
+      <input type="email"  class="form-control" [(ngModel)]=driver.email name="email" placeholder="abc@mail.com" #email= ngModel pattern="[a-z0-9]+@[a-z]+.[a-z]{3,}" required>
       <span *ngIf = "email.touched && email.invalid && (email.errors.required || email.errors.pattern)" class="alert-warning"> 
-        Invalid email or email cannot be empty</span>
+        <p class="error-div" style="color:red " >Invalid E-mail</p></span>
         <hr>
     </div>
   
     <div class="form-group">
-      <label>Enter Your Contact</label><br>
+      <label>Enter Your Contact: </label><br>
       <input type="text"  class="form-control" [(ngModel)]=driver.contactNo name="contact" placeholder="9876543210" #contact = ngModel pattern="[7-9][0-9]{9}" required>
       <span *ngIf = "contact.touched && contact.invalid && (contact.errors.required || contact.errors.pattern)" class="alert-warning"> 
-        Invalid contact or contact cannot be empty</span>
+        <p class="error-div" style="color:red " >Invalid Contact</p></span>
         <hr>
     </div>
   
     <div class="form-group">
-      <label>Enter Your Address</label><br>
-      <input type="text"  class="form-control" [(ngModel)]=driver.address name="address" placeholder="your address" #address = ngModel pattern="[A-Z][a-z]{5,}" required>
+      <label>Enter Your Address: </label><br>
+      <input type="text"  class="form-control" [(ngModel)]=driver.address name="address" placeholder="Your address" #address = ngModel pattern="[A-Z][a-z]{5,}" required>
       <span *ngIf = "address.touched && address.invalid && (address.errors.required || address.errors.pattern)" class="alert-warning"> 
-        Invalid contact or contact cannot be empty</span>
+        <p class="error-div" style="color:red " >Invalid Address</p></span>
         <hr>
     </div>
+
+    <div class="form-group">
+      <label>Enter DL Number: </label><br>
+      <input type="text"  class="form-control" [(ngModel)]=driver.drivingLicense name="address" placeholder="Your DL number" #dl = ngModel pattern="[a-z]{5,}" required>
+      <span *ngIf = "dl.touched && dl.invalid && (dl.errors.required || dl.errors.pattern)" class="alert-warning"> 
+        <p class="error-div" style="color:red " >Invalid DL Number</p></span>
+        <hr>
+    </div>    
   
     <div class="form-group">
-      <label>Enter Your Vehicle Number</label><br>
-      <input type="text"  class="form-control" [(ngModel)]=driver.vehicleNo name="vehicleNo" placeholder="your address" #vehicleNo = ngModel pattern="[A-Z0-9]{5,}" required>
+      <label>Enter Your Vehicle Number: </label><br>
+      <input type="text"  class="form-control" [(ngModel)]=driver.vehicleNo name="vehicleNo" placeholder="e.g. MH42OC1234" #vehicleNo = ngModel pattern="[a-zA-Z0-9]{6,10}" required>
       <span *ngIf = "vehicleNo.touched && vehicleNo.invalid && (vehicleNo.errors.required || vehicleNo.errors.pattern)" class="alert-warning"> 
-        Invalid contact or contact cannot be empty</span>
+        <p class="error-div" style="color:red " >Invalid Vehicle Number</p></span>
         <hr>
     </div>
 
@@ -79,3 +99,6 @@
       <button class="btn btn-success" type="submit" [disabled] = "!addForm.valid">Register Driver</button>
     </div>
   </form>
+  </div>
+  <div class="col-xs-3"></div>
+  </div>
