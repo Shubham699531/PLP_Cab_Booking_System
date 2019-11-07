@@ -17,6 +17,7 @@ public class Driver {
 	private String contactNo;
 	@Column(unique = true)
 	private String email;
+	private String password;
 	private String address;
 	private String vehicleNo;
 	private String status;
