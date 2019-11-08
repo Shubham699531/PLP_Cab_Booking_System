@@ -4,70 +4,118 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cg.cabbookingsystem.dto.Booking;
-import com.cg.cabbookingsystem.dto.DriverModel;
-import com.cg.cabbookingsystem.dto.User;
+import com.cg.cabbookingsystem.dto.Customer;
+import com.cg.cabbookingsystem.dto.Driver;
 import com.cg.cabbookingsystem.dto.Vehicle;
-import com.cg.cabbookingsystem.repo.DriverRepo;
+import com.cg.cabbookingsystem.exception.NoBookingFoundException;
+import com.cg.cabbookingsystem.exception.NoPastRidesFoundException;
+import com.cg.cabbookingsystem.service.DriverService;
 
+/**
+ * Rest Controller for managing requests from the client
+ * @author Shubham
+ * @version 1.0
+ *
+ */
 @Transactional
 @RestController
 @RequestMapping(value = "/driver")
 public class DriverController {
 	
-	private DriverRepo repo;
+	//Using logger for auditing the application
+	static Logger myLogger = Logger.getLogger(DriverController.class);
+	
+	private DriverService service;
 	
 	@Autowired
-	public DriverController(DriverRepo repo) {
-		this.repo = repo;
+	public DriverController(DriverService service) {
+		//configuring log4j for logging
+		PropertyConfigurator.configure("src/main/java/log4j.properties");
+		this.service = service;
 	}
 	
-	@PostMapping(consumes = "application/json")
-	public DriverModel saveDriver(@RequestBody DriverModel driver) {
-		return repo.save(driver);
-	}
-	
-	@GetMapping(value = "/fetch")
-	public DriverModel fetchDriver(@RequestParam String email) {
-		return repo.fetchByEmail(email);
-	}
-	
-//	@PostMapping(value = "/update")
-//	public DriverModel updateDriverDetails(@RequestBody DriverModel driver) {
-//		
-//	}
-	
+	/**
+	 * Find a suitable driver for the customer from the list of available 
+	 *  cabs
+	 * @param vehicles
+	 * 	List of vehicles coming from customer side which
+	 * 	contains information of the vehicles that are nearby and free
+	 * @return the selected driver who is assigned for the
+	 * coming customer request
+	 */
 	@PostMapping(value = "/driverList")
-	public DriverModel listAllDrivers(@RequestBody List<Vehicle> vehicles){
-		return repo.getListOfDrivers(vehicles);
+	public Driver getASuitableDriver(@RequestBody List<Vehicle> vehicles){
+		myLogger.debug("No. of vehicles free at current time : " + System.currentTimeMillis()+ " is :" + vehicles.size());
+		return service.getListOfDrivers(vehicles);
 	}
 	
-	@PostMapping(value = "/booking")
-	public Booking getBookingDetails(@RequestBody Booking booking) {
-		return repo.showBookingDetails(booking);
+	/**
+	 * Searches for a current Booking for the driver who is logged in
+	 * @param driverId
+	 * id of the driver who is logged in
+	 * @return
+	 * customer details who is alloted to the logged in driver
+	 * @throws NoBookingFoundException 
+	 * if there's no booking for the driver with the given driverId
+	 */
+	@GetMapping(value = "/getCustomerFromBooking")
+	public Customer searchForBooking(@RequestParam int driverId) throws NoBookingFoundException {
+		myLogger.debug("Finding customer details for driver with driverId: " + driverId);
+		return service.searchForBooking(driverId);
 	}
 	
+	/**
+	 * Shows a list of past rides of the logged in driver
+	 * @param driverId
+	 * 	id of the driver who is logged in
+	 * @return
+	 * list of past rides along with source, destination and fare
+	 * @throws NoPastRidesFoundException 
+	 * if no past rides exist for the driver with the queried driverId
+	 */
 	@GetMapping(value = "/history")
-	public List<Booking> getHistoryOfDriver(@RequestParam int driverId){
-		List<Booking> l = repo.getAllTripsOfADriver(driverId);
-		System.out.println("$$$$$$$" + l.get(0));
-		return l;
+	public List<Booking> getHistoryOfDriver(@RequestParam int driverId) throws NoPastRidesFoundException{
+		myLogger.debug("Getting no. of past rides of driver with driverId : " + driverId + " at " + System.currentTimeMillis());
+		return service.getAllTripsOfADriver(driverId);
 	}
 	
-	@PostMapping(value = "/validate")
-	public DriverModel validateLogin(@RequestBody User user) {
-		DriverModel driver =  repo.validateLogin(user);
-		System.out.println(driver.getDriverId());
-		return driver;
+	/**
+	 * Gets a driver by email id
+	 * @param email
+	 * email Id of the driver to be searched
+	 * @return
+	 * driver with the entered email id
+	 */
+	@GetMapping(value = "/fetch")
+	public Driver fetchDriver(@RequestParam String email) {
+		myLogger.debug("Fetching details of driver with e-mail Id: " + email);
+		return service.fetchByEmail(email);
 	}
+	
+	/**
+	 * Gets booking details for a particular driver
+	 * @param driverId
+	 * id of the driver whose booking details are to be fetched
+	 * @return
+	 * confirmed booking details for the driver
+	 * @throws NoBookingFoundException 
+	 * if there's no booking for the driver with the given driverId
+	 */
+	@GetMapping(value = "/getBooking")
+	public Booking getBookingForADriver(@RequestParam int driverId) throws NoBookingFoundException{
+		myLogger.debug("Getting booking details for driver with driver Id: " + driverId);
+		return service.getBookingDetailsForADriver(driverId);
+	} 
 
 }

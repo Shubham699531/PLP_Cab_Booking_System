@@ -1,0 +1,6 @@
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 254 at 1573241726261
+[http-nio-8882-exec-5] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 254
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 259 at 1573241770237
+[http-nio-8882-exec-7] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 259
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: asc
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : asc with messsage: No entity found for query

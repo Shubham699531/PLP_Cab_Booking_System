@@ -1,20 +1,22 @@
 package com.cg.cabbookingsystem.dto;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.NamedQuery;
-import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "vehicle")
-@NamedQuery(name = "getVehicles", query = "FROM Vehicle WHERE (sizeOfCab=:sizeOfCab AND model=:model AND location =:location AND status='free')")
 public class Vehicle {
 
 	@Id
 	private String vehicleNo;
-	private int sizeOfCab;
+	private int categoryId;
+	@Column(length = 50)
 	private String model;
-	private String status; //Free/Booked
+	@Column(length = 50)
+	private String status;
+	@NotNull(message = "Car location cannot be empty")
+	@Column(length = 50)
 	private String location;
 	
 	public String getVehicleNo() {
@@ -24,10 +26,10 @@ public class Vehicle {
 		this.vehicleNo = vehicleNo;
 	}
 	public int getSize() {
-		return sizeOfCab;
+		return categoryId;
 	}
 	public void setSize(int size) {
-		this.sizeOfCab = size;
+		this.categoryId = size;
 	}
 	public String getModel() {
 		return model;

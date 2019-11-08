@@ -8,34 +8,63 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.SequenceGenerator;
+import javax.validation.constraints.NotNull;
 
 @Entity
-@NamedQuery(name = "validateLogin",query = "FROM Driver WHERE email=:email AND password=:password")
+@NamedQuery(name = "fetchDriverByEmail",query = "FROM Driver WHERE email=:email")
 @SequenceGenerator(name = "DRIVER_SEQ_GEN", sequenceName = "driver_seq")
-public class Driver {
-	
+public class Driver{
+	@Id
 	@GeneratedValue(generator = "DRIVER_SEQ_GEN")
 	private int driverId;
-	
-	@Column(length = 40)
+	@Column(length = 50)
+	@NotNull(message = "Name cannot be empty")
 	private String name;
-	@Column(length = 30)
+	@NotNull(message = "Password cannot be empty")
+	@Column(length = 50)
 	private String password;
 	private Date dob;
-	@Column(length = 10)
+	@Column(length = 50)
 	private String gender;
-	@Column(length = 20)
+	@Column(length = 50)
 	private String contactNo;
-	@Column(length = 40)
+	@NotNull(message = "E-mail cannot be empty")
+	@Column(length = 50,unique = true)
 	private String email;
 	@Column(length = 80)
 	private String address;
-	@Column(length = 20)
-	private String driverStatus = "Free";
-	@Id
-	@Column(name ="vehicle_no", length = 30)
+	@Column(length = 50)
+	private String driverStatus; //status
+	@Column(length = 30)
 	private String vehicleNo;
+	@NotNull(message = "DL No. cannot be empty")
+	private String drivingLicense;
+	private int rating;
+	private int numberOfTrips;
 	
+	
+	//To be added - drivingLicense, rating, numberOfTrips
+	//@Column(length=20)
+	//private String vehicleType;
+	
+	public String getDrivingLicense() {
+		return drivingLicense;
+	}
+	public void setDrivingLicense(String drivingLicense) {
+		this.drivingLicense = drivingLicense;
+	}
+	public int getRating() {
+		return rating;
+	}
+	public void setRating(int rating) {
+		this.rating = rating;
+	}
+	public int getNumberOfTrips() {
+		return numberOfTrips;
+	}
+	public void setNumberOfTrips(int numberOfTrips) {
+		this.numberOfTrips = numberOfTrips;
+	}
 	public String getName() {
 		return name;
 	}
