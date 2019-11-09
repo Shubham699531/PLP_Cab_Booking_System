@@ -7,6 +7,12 @@ import com.cg.cabbookingsystem.dto.Customer;
 import com.cg.cabbookingsystem.dto.Driver;
 import com.cg.cabbookingsystem.dto.Vehicle;
 
+/**
+ * Interface for defining specific roles of driver 
+ * @author Shubham
+ * @version 1.0
+ *
+ */
 public interface DriverRepo {
 	
 	/**
@@ -26,8 +32,10 @@ public interface DriverRepo {
 	 * 	id of the driver who is logged in
 	 * @return
 	 * list of past rides along with source, destination and fare
+	 * @throws NoPastRidesFoundException 
+	 * if no past rides exist for the driver with the queried driverId
 	 */
-	List<Booking> getAllTripsOfADriver(int userId);
+	List<Booking> getAllTripsOfADriver(int userId) throws NoPastRidesFoundException;
 
 	/**
 	 * Gets a driver by email id
@@ -44,10 +52,21 @@ public interface DriverRepo {
 	 * id of the driver who is logged in
 	 * @return
 	 * customer details who is alloted to the logged in driver
+	 * @throws NoBookingFoundException 
+	 * if there's no booking for the driver with the given driverId
 	 */
-	Customer searchForBooking(int driverId);
+	Customer searchForBooking(int driverId) throws NoBookingFoundException;
 	
-	Booking getBookingDetailsForADriver(int driverId);
+	/**
+	 * Gets booking details for a particular driver
+	 * @param driverId
+	 * id of the driver whose booking details are to be fetched
+	 * @return
+	 * confirmed booking details for the driver
+	 * @throws NoBookingFoundException 
+	 * if there's no booking for the driver with the given driverId
+	 */
+	Booking getBookingDetailsForADriver(int driverId) throws NoBookingFoundException;
 
 
 }
