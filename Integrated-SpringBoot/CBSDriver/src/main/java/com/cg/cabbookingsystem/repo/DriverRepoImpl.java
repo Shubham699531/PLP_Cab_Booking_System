@@ -12,9 +12,16 @@ import com.cg.cabbookingsystem.dto.Customer;
 import com.cg.cabbookingsystem.dto.Driver;
 import com.cg.cabbookingsystem.dto.Vehicle;
 
+/**
+ * Implementing specific roles of a driver
+ * @author Shubham
+ * @version 1.0
+ *
+ */
 @Repository
 public class DriverRepoImpl implements DriverRepo {
 	private EntityManager mgr;
+	static Logger myLogger = Logger.getLogger(DriverRepoImpl.class);
 	@Autowired
 	public DriverRepoImpl(EntityManager mgr) {
 		this.mgr = mgr;
@@ -48,10 +55,20 @@ public class DriverRepoImpl implements DriverRepo {
 	 * 	id of the driver who is logged in
 	 * @return
 	 * list of past rides along with source, destination and fare
+	 * @throws NoPastRidesFoundException 
+	 * if no past rides exist for the driver with the queried driverId
 	 */
 	@Override
-	public List<Booking> getAllTripsOfADriver(int driverId) {
-		return mgr.createNamedQuery("getPastRidesOfDriver",Booking.class).setParameter("driverId", driverId).getResultList();
+	public List<Booking> getAllTripsOfADriver(int driverId) throws NoPastRidesFoundException {
+		List<Booking> bookings = new ArrayList<Booking>();
+		bookings = mgr.createNamedQuery("getPastRidesOfDriver",Booking.class).setParameter("driverId", driverId).getResultList();
+		if(bookings.size()>0) {
+			return bookings;
+		}
+		else {
+			myLogger.warn("No past rides found for driver with driver Id: " + driverId);
+			throw new NoPastRidesFoundException("Driver Id: " + driverId + " No past rides for you.");
+		}
 	}
 	
 	/**
@@ -67,6 +84,7 @@ public class DriverRepoImpl implements DriverRepo {
 		try {
 			driver =  mgr.createNamedQuery("fetchDriverByEmail", Driver.class).setParameter("email", email).getSingleResult();
 		} catch (Exception e) {
+			myLogger.warn("Exception occured when email entered is : " + email +  " with messsage: " + e.getMessage());
 			driver = new Driver();
 			driver.setDriverId(-1);
 		}
@@ -79,19 +97,42 @@ public class DriverRepoImpl implements DriverRepo {
 	 * id of the driver who is logged in
 	 * @return
 	 * customer details who is alloted to the logged in driver
+	 * @throws NoBookingFoundException 
+	 * if there's no booking for the driver with the given driverId
 	 */
 	@Override
-	public Customer searchForBooking(int driverId) {
+	public Customer searchForBooking(int driverId) throws NoBookingFoundException{
+		Customer customer = null;
 		Booking booking = mgr.createNamedQuery("searchBookingDetails", Booking.class).setParameter("driverId", driverId).getSingleResult();
 		if(booking != null) {
-			return mgr.find(Customer.class, booking.getCustomerId()) ;
+			try {
+				customer = mgr.createNamedQuery("getCustomerById", Customer.class).setParameter("customerId", booking.getCustomerId()).getSingleResult();
+			} catch (Exception e) {
+				myLogger.warn("No bookings for driver Id: " + driverId + " Exception thrown: " + e.getMessage() );
+				throw new NoBookingFoundException("No bookings found for Id: " + driverId);
+			}
 		}
-		return null;
+		return customer;
 	}
 	
+	/**
+	 * Gets booking details for a particular driver
+	 * @param driverId
+	 * id of the driver whose booking details are to be fetched
+	 * @return
+	 * confirmed booking details for the driver
+	 * @throws NoBookingFoundException 
+	 * if there's no booking for the driver with the given driverId
+	 */
 	@Override
-	public Booking getBookingDetailsForADriver(int driverId) {
-		Booking booking = mgr.createNamedQuery("searchBookingDetails", Booking.class).setParameter("driverId", driverId).getSingleResult();
+	public Booking getBookingDetailsForADriver(int driverId) throws NoBookingFoundException{
+		Booking booking =  null;
+		try {
+			booking = mgr.createNamedQuery("searchBookingDetails", Booking.class).setParameter("driverId", driverId).getSingleResult();
+		} catch (Exception e) {
+			myLogger.warn("No bookings for driver Id: " + driverId + " Exception thrown: " + e.getMessage() );			
+			throw new NoBookingFoundException("No bookings found for Id: " + driverId);
+		}
 		return booking;
 	}
 
