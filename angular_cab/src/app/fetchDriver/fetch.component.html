@@ -1,0 +1,97 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://localhost:4200/home"> Home</a>
+        
+      </div>
+      <ul class="nav navbar-nav">
+         
+         <a href="http://localhost:4200/list" class="navbar-brand" style="font-size: large;">Driver Verification</a>&nbsp;&nbsp;&nbsp;
+         <a href="http://localhost:4200/report" class="navbar-brand" style="font-size: large;">Customer Issues</a>&nbsp;&nbsp;&nbsp;
+         <a href="http://localhost:4200/bookingdetails" class="navbar-brand" style="font-size: large;">Booking Details</a>
+        </ul>      
+<button class="btn btn-info" (click)="logOut()">LogOut</button><br><br>
+    
+    </div>
+  </nav>
+  <div class="container-fluid">
+   
+  </div> 
+  <h2 style="color:rgb(84, 15, 211); text-align: center;">Welcome to Admin Service</h2>
+
+
+<div class="row" >
+    <div class="col-md-3 mx-auto" > 
+     <div class="card rounded-0" >
+        <div class="card-header">
+               <h3 class="mb-0">Driver Details</h3>
+        </div>
+        
+        <form (ngSubmit)="searchDriver()" #addForm="ngForm">
+      
+            <!-- <div class="form group"> -->
+                <label for="id"></label>
+              
+            <div class="input-group">
+              <input type="number" [(ngModel)]=id name="id"  class="form-control" placeholder="Enter driver Id">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+  
+  
+          </form>
+
+</div>
+ </div>
+ </div>
+ 
+ 
+ 
+
+
+  <div [hidden]="!flag">
+  <table class="table table-bordered">
+    
+      <tr>
+      
+      <th>ID</th>
+      <th>Name</th>
+      <th>DOB</th>
+      <th>Gender</th>
+      <th>Contact Number</th>
+      <th>Address</th>
+      <th>Vehicle Number</th>
+      <th>Status</th>
+      <th>email</th>
+      <!-- <th>password</th>   -->
+      <th>No. of trips</th>
+      <th>Driving License</th>
+      <th>Rating</th>
+      <th colspan="2">Action</th>
+      
+    </tr>
+ <!-- <tr *ngFor="let driver of drivers; let i = index">  -->
+   <tr>
+  
+      <td>{{driver.driverId}}</td>
+      <td>{{driver.name}}</td>
+      <td>{{driver.dob}}</td>
+      <td>{{driver.gender}}</td>
+      <td>{{driver.contactNo}}</td>
+      <td>{{driver.address}}</td>
+      <td>{{driver.vehicleNo}}</td>
+      <td>{{driver.driverStatus}}</td>
+      <td>{{driver.email}}</td>
+        <!-- <td>{{driver.password}}</td>   -->
+      <td>{{driver.numberOfTrips}}</td>
+      <td>{{driver.drivingLicense}}</td>
+      <td>{{driver.rating}}</td>
+      
+
+      <td><button class="btn btn-info" (click)="issueResolved()">Resolve Issue</button></td>
+    </tr>
+    </table>
+  </div>

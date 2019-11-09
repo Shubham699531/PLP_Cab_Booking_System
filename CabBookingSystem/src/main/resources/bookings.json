@@ -1,0 +1,16 @@
+[
+{
+ "source":"Andheri", 
+"destination":"Bandra",
+ "driverId":1018,  
+  "customerId":1025,
+ "driverStatus":"Free",  
+"tripStatus":"Over", 
+"estimatedFare":348.5,  
+"estimatedTime":24, 
+"finalTime":25,  
+"finalFare":350.0, 
+"rating":7
+
+}
+]

@@ -1,0 +1,36 @@
+[
+	{
+	
+ "name":"Ravi",
+  "dob":"11-06-1995",
+  "gender":"Male",
+  "contactNo":"9987878787",
+  "address":"Delhi",
+  "vehicleNo":"DL12AB4765",
+  "drivingLicense":"DL7868452134767", 
+  "driverStatus":"Not Verified", 
+ "email":"ravi@gmail.com",
+ "password":"password",
+   "rating":0,
+   "numberOfTrips":0
+ 
+	},
+	
+		{
+	
+   "name":"Shani",
+  "dob":"08-06-1992",
+  "gender":"Male",
+  "contactNo":"8887878787",
+  "address":"Mumbai",
+  "vehicleNo":"MH12AB4765",
+  "drivingLicense":"MH7868452134767", 
+  "driverStatus":"Not Verified", 
+ "email":"shani@gmail.com",
+ "password":"password",
+   "rating":0,
+   "numberOfTrips":0
+ 
+	}
+	
+]

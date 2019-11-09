@@ -1,0 +1,83 @@
+
+<style>
+
+h3 {
+  text-align: center;
+  color: black;
+}
+h5 {
+  text-align: center;
+  color: black;
+}
+button { 
+  min-width: 250px;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+#div1 {
+  border: 1px solid black;
+  margin: 100px 350px ; 
+ padding-top: 10px; 
+   padding-right: 30px; 
+  padding-bottom: 20px;
+  padding-left: 30px; 
+} 
+
+
+
+  </style>
+
+      <div class="container-fluid" style="background-color: rgb(216, 189, 189);">
+      
+        <div class="navbar-header" >
+          <a class="navbar-brand"  style="color:rgb(12, 6, 6);" >Admin Service 
+        </a>
+        </div> 
+      </div>
+   
+        <div id="div1" class="col-sm-50 col-md-3.5 col-md-offset-4 " style="background-color: rgb(53, 201, 188); ">
+  
+             <h3 class="mb-0">ADMINISTRATOR</h3>
+             <h5 class="mb-0">Please Login to get access.</h5><br>
+     
+      <div class="form group" > 
+        
+        <form (ngSubmit)="checkLogin()" #addForm="ngForm">
+            <div class="form-group required">
+                <label class="control-label" for="username">Username or Email</label>
+  <div class="form-group input-group" >
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+     <input type="text" name="username" class="form-control rounded-0" [(ngModel)]="username" placeholder="Enter Username">
+  </div>
+  </div>
+  <br>
+  <div class="form-group required">
+      <label class="control-label" for="password">Password</label>
+  <div class="form-group input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+     <input type="password" name="password" class="form-control rounded-0" [(ngModel)]="password" placeholder="Enter Password">
+  </div>
+</div><br>
+  <button  class="btn btn-success" aria-setsize="100" >
+    Login
+  </button>
+  </form>
+</div>
+</div>
+
+
+
+
+
+
+
+ 
+
+
+   
+
+
+
+
