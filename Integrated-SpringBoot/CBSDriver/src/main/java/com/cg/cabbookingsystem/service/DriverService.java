@@ -7,6 +7,12 @@ import com.cg.cabbookingsystem.dto.Customer;
 import com.cg.cabbookingsystem.dto.Driver;
 import com.cg.cabbookingsystem.dto.Vehicle;
 
+/**
+ * Interface defining roles of the driver
+ * @author Shubham
+ * @version 1.0
+ *
+ */
 public interface DriverService {
 	
 	/**
@@ -30,24 +36,36 @@ public interface DriverService {
 		Driver fetchByEmail(String email);
 	
 	/**
-	 * Shows a list of past rides of the logged in driver
-	 * @param driverId
-	 * 	id of the driver who is logged in
-	 * @return
-	 * list of past rides along with source, destination and fare
-	 */
-		List<Booking> getAllTripsOfADriver(int userId);
+		 * Shows a list of past rides of the logged in driver
+		 * @param driverId
+		 * 	id of the driver who is logged in
+		 * @return
+		 * list of past rides along with source, destination and fare
+		 * @throws NoPastRidesFoundException 
+		 * if no past rides exist for the driver with the queried driverId
+		 */
+		List<Booking> getAllTripsOfADriver(int userId) throws NoPastRidesFoundException;
 	
 		
 	/**
-	 * Searches for a current Booking for the driver who is logged in
-	 * @param driverId
-	 * id of the driver who is logged in
-	 * @return
-	 * customer details who is alloted to the logged in driver
-	 */
-		Customer searchForBooking(int driverId);
-
-
-		Booking getBookingDetailsForADriver(int driverId);
+		 * Searches for a current Booking for the driver who is logged in
+		 * @param driverId
+		 * id of the driver who is logged in
+		 * @return
+		 * customer details who is alloted to the logged in driver
+		 * @throws NoBookingFoundException 
+		 * if there's no booking for the driver with the given driverId
+		 */
+		Customer searchForBooking(int driverId) throws NoBookingFoundException;
+		
+		/**
+		 * Gets booking details for a particular driver
+		 * @param driverId
+		 * id of the driver whose booking details are to be fetched
+		 * @return
+		 * confirmed booking details for the driver
+		 * @throws NoBookingFoundException 
+		 * if there's no booking for the driver with the given driverId
+		 */
+		Booking getBookingDetailsForADriver(int driverId) throws NoBookingFoundException;
 }
