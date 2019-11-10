@@ -2,6 +2,8 @@ package com.cg.cabbookingsystem.repo;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.RequestParam;
+
 import com.cg.cabbookingsystem.dto.Booking;
 import com.cg.cabbookingsystem.dto.Customer;
 import com.cg.cabbookingsystem.dto.CustomerRequest;
@@ -51,4 +53,11 @@ public interface CustomerRepo {
 	 * 			Details of a particular location
 	 */
 	Location getLocationByName(String name);
+	
+	/**
+	 * 
+	 * @param customerId
+	 * @return
+	 */
+	public Booking checkRatedStatus(@RequestParam int customerId);
 }

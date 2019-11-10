@@ -3,6 +3,7 @@ package com.cg.cbs.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -11,6 +12,7 @@ import com.cg.cbs.dto.Location;
 import com.cg.cbs.dto.Pricing;
 import com.cg.cbs.dao.GetLocationDao;
 import com.cg.cbs.dao.EstimatePriceDao;
+import com.cg.cbs.dao.EstimatePriceDaoImpl;
 import com.cg.cbs.dao.TripDetailsDao;
 import com.cg.cbs.dto.CustomerRequest;
 /**
@@ -23,6 +25,9 @@ import com.cg.cbs.dto.CustomerRequest;
 @Transactional
 public class TripServiceImpl implements TripService{
 
+	//logger
+	static Logger log = Logger.getLogger(TripService.class);
+	
 	@Autowired
 	TripDetailsDao tripDao;
 	
@@ -39,11 +44,12 @@ public class TripServiceImpl implements TripService{
 	 */
 	@Override
 	public CustomerRequest saveCustomerRequest(CustomerRequest details) {
+		log.info("calling dao class for persisting CustomerRequest");
 		return tripDao.saveTripDetails(details);
 	}
 
 	/**
-	 * This method delegates call to  LocationDao classe for fetchig the Location
+	 * This method delegates call to  LocationDao class for fetching the Location
 	 * details of source and destination (for calculating distance between them).
 	 * It also delegates call to EstimatePrice Dao class for fetching pricing details 
 	 * 
@@ -59,15 +65,18 @@ public class TripServiceImpl implements TripService{
 		List<Location> journey = locationDao.getLocationDetails(details);
 		Location source = journey.get(0);
 		Location destination = journey.get(1);
+		log.info("price estimation for source:"+details.getSource()+" and destination: "+details.getDestination());
 		
 		//Getting pricing details of given car model
 		Pricing pricing = priceDao.estimatePrice(details);
 		
 		//Distance Calculation Logic
 		distance = Math.sqrt(Math.pow(source.getxCoordinate()- destination.getxCoordinate(),2)+Math.pow(source.getyCoordinate()- destination.getyCoordinate(),2));
+		log.info("Calculated distance:"+ distance +" for source:"+details.getSource()+" and destination: "+details.getDestination());
 		
 		//Fare Calculation Logic
 		fare = pricing.getBasePrice() + (distance-1.5)*pricing.getRatePerKM();
+		log.info("Calculated price:"+ fare +" for source:"+details.getSource()+" and destination: "+details.getDestination());
 		
 		String fareString = String.format("%.2f", fare);
 		fare = Double.parseDouble(fareString);

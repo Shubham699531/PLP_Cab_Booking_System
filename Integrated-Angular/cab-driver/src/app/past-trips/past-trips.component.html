@@ -1,0 +1,17 @@
+
+<div *ngIf=!noRides>
+  <table class="table table-bordered">
+    <tr><th>Past Rides</th></tr>
+      <tr><th>Source</th><th>Destination</th><th>Customer ID</th><th>Fare</th><th>Rating</th></tr>
+      <tr *ngFor="let p of history">
+        <td>{{p.source}}</td>
+        <td>{{p.destination}}</td>
+        <td>{{p.customerId}}</td>
+        <td>{{p.finalFare}}</td>
+        <td>{{p.rating}}</td>
+      </tr>
+    </table>
+</div>
+<div *ngIf = "noRides">
+  {{invaildMsg}}
+</div>

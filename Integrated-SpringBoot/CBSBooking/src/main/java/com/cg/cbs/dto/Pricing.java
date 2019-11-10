@@ -5,6 +5,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 
+/**
+ * DTO for holding customer pricing details for different models of cab.
+ * @author Akash
+ *
+ */
 @Entity
 @NamedQuery(name = "getPrice" ,query = "FROM Pricing WHERE modelType=:model")
 public class Pricing {

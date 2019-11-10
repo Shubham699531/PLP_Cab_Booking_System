@@ -1,0 +1,13 @@
+[http-nio-8001-exec-1] INFO  com.cg.cbs.controller.TripController  - calling service method for saving customer request with source: Powai destination: Andheri
+[http-nio-8001-exec-1] INFO  com.cg.cbs.service.TripService  - calling dao class for persisting CustomerRequest
+[http-nio-8001-exec-1] INFO  com.cg.cbs.dao.TripDetailsDaoImpl  - persisting Customer Request object in sql database
+[http-nio-8001-exec-2] INFO  com.cg.cbs.controller.TripController  - calling service method for saving customer request with source: IIT Bombay destination: Ghansoli
+[http-nio-8001-exec-2] INFO  com.cg.cbs.service.TripService  - calling dao class for persisting CustomerRequest
+[http-nio-8001-exec-2] INFO  com.cg.cbs.dao.TripDetailsDaoImpl  - persisting Customer Request object in sql database
+[http-nio-8001-exec-4] INFO  com.cg.cbs.controller.TripController  - calling service method for estimating price with source: IIT Bombay destination: Ghansoli
+[http-nio-8001-exec-3] INFO  com.cg.cbs.controller.TripController  - calling service method for estimating price with source: Powai destination: Andheri
+[http-nio-8001-exec-3] INFO  com.cg.cbs.service.TripService  - price estimation for source:Powai and destination: Andheri
+[http-nio-8001-exec-3] INFO  com.cg.cbs.dao.EstimatePriceDaoImpl  - pricing details of passed customer request
+[http-nio-8001-exec-3] INFO  com.cg.cbs.service.TripService  - Calculated distance:22.0 for source:Powai and destination: Andheri
+[http-nio-8001-exec-3] INFO  com.cg.cbs.service.TripService  - Calculated price:357.0 for source:Powai and destination: Andheri
+[http-nio-8001-exec-5] INFO  com.cg.cbs.controller.TripController  - calling service method for estimating location

@@ -1,0 +1,15 @@
+<!-- customer-navbar -->
+<nav class="navbar navbar-inverse" style="margin: 0;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">TAP-CAB!</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a (click)="onAdmin()">Admin</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a [routerLink]="['signup']" *ngIf="!isCustomerLogin"><span class="glyphicon glyphicon-log-in"></span>Signup</a></li>
+      <li *ngIf="isCustomerLogin"><a (click)="customerLogout()"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+    </ul>
+  </div>
+</nav>

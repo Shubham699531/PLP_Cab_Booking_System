@@ -1,0 +1,29 @@
+<div *ngIf="loggedIn">
+  <table class="table table-bordered" >
+   <tr>
+     <th><h1>Driver Details</h1></th>
+   </tr>
+   <tr>
+     <td>Name: </td>  <td> {{driver.name}}</td>
+   </tr>
+   <tr>
+     <td>Date Of Birth: </td>  <td>{{driver.dob}}</td>
+   </tr>
+   <tr>
+     <td>Gender:</td>  <td> {{driver.gender}}</td>
+   </tr>
+   <tr>
+     <td>Contact No: </td>  <td>{{driver.contactNo}}</td>
+   </tr>
+   <tr>
+     <td>E-mail: </td>  <td>{{driver.email}}</td>
+   </tr>
+   <tr>
+     <td>Address: </td>  <td>{{driver.address}}</td>
+   </tr>
+   <tr>
+     <td>Vehicle No: </td>  <td>{{driver.vehicleNo}}</td>
+   </tr>
+ </table>
+ </div>
+ <div *ngIf="!loggedIn"><h3>User is not logged in!</h3></div>

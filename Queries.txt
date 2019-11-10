@@ -1,0 +1,78 @@
+ insert into location values('Powai',1,1);
+
+
+ insert into location values('Andheri',1,2);
+
+
+ insert into location values('Juhu',0,0);
+
+
+ insert into location values('Airoli',1,3);
+
+
+ insert into location values('Kalwa',1,4);
+
+
+ insert into location values('Thane',1,5);
+
+
+ insert into location values('Kandivali',1,6);
+
+
+ insert into location values('Goregaon',1,7);
+
+
+ insert into location values('Marol',2,1);
+
+
+ insert into location values('Oshiwara',2,2);
+
+
+ insert into location values('Aarey Colony',2,3);
+
+
+ insert into location values('IIT Bombay',2,4);
+
+
+ insert into location values('Borivali',2,5);
+
+
+ insert into location values('Dombivali',2,6);
+
+
+ insert into location values('Mulund West',3,1);
+
+
+ insert into location values('SGNP',3,2);
+
+
+ insert into location values('Kanjurmarg East',3,3);
+
+
+ insert into location values('Ghansoli',3,4);
+
+
+ insert into location values('Mahape',3,5);
+
+
+ insert into location values('Charkop Gaon',4,1);
+ 
+ create table vehicle (vehicle_no varchar2(255 char) not null, location varchar2(255 char), model varchar2(255 char), size number(10,0) not null, status varchar2(255 char));
+select * from vehical;
+drop table vehical;
+commit;
+ insert into driver values('MH04MG1234','Nepal','9919',TO_DATE('23/12/2000','dd/MM/yyyy'),'male','Abhay', 'Booked', 'sdgh');
+ insert into vehicle values('MH04MG1236','Juhu','Micro',4,'booked');
+ insert into vehicle values('MH04MG1238','Mahape','Micro',4,'free');
+ insert into vehicle values('MH04MG1232','Juhu','Mini',4,'free');
+ insert into driver values('MH04MG1332','Punjab','9912',TO_DATE('23/12/2000','dd/MM/yyyy'),'male','Bijay','Free','abs');
+ commit;
+ select * from driver;
+ delete from driver;
+ commit;
+ select * FROM vehicle WHERE (sizeOfCab=4 AND model='Micro' AND location ='Juhu' AND status='free';
+ 
+ INSERT INTO pricing VALUES (1,40,"mini",8,0);
+INSERT INTO pricing VALUES (2,50,"micro",10,0);
+INSERT INTO pricing VALUES (3,60,"sedan",12,0);
+INSERT INTO pricing VALUES (4,70,"suv",14,0);

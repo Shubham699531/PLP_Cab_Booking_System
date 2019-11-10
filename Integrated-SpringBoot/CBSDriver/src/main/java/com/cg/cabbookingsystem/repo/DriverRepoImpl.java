@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
+
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -11,6 +13,8 @@ import com.cg.cabbookingsystem.dto.Booking;
 import com.cg.cabbookingsystem.dto.Customer;
 import com.cg.cabbookingsystem.dto.Driver;
 import com.cg.cabbookingsystem.dto.Vehicle;
+import com.cg.cabbookingsystem.exception.NoBookingFoundException;
+import com.cg.cabbookingsystem.exception.NoPastRidesFoundException;
 
 /**
  * Implementing specific roles of a driver

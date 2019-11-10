@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-xs-3">
+        <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-primary" (click)="showBooking()"> Your
+                Cab</button>
+            <button type="button" class="list-group-item list-group-item-primary" (click)="showPastTrips()">View Past
+                Trips</button>
+            <button type="button" class="list-group-item list-group-item-primary" (click)="showTripStatus()">Trip
+                Status</button>
+            <button type="button" class="list-group-item list-group-item-primary" (click)="showAddPayment()">Add Payment</button>
+            <button type="button" class="list-group-item list-group-item-primary" (click)="showAddReport()">Add Report</button>
+            <button type="button" class="list-group-item list-group-item-primary" (click)="logout()">Logout</button>
+
+        </div>
+    </div>
+    <div class="col-xs-1"></div>
+    <div class="col-xs-8">
+        <app-book-cab *ngIf="showBookCabComp" (showTripStatus) = 'showTripStatus($event)'></app-book-cab>
+        <app-show-past-trips *ngIf="showPastTripsComp"></app-show-past-trips>
+        <app-show-trip-status *ngIf="showTripStatusComp"></app-show-trip-status>
+        <app-add-payment *ngIf="showAddPaymentComp"></app-add-payment>
+        <app-add-report *ngIf="showAddReportComp"></app-add-report>
+    </div>
+</div>

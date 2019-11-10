@@ -11,7 +11,18 @@ import com.cg.cbs.dto.CustomerRequest;
  *
  */
 public interface GetLocationDao {
-
+	
+	/**
+	 * Method to fetch location details of source and destination
+	 * of passed CustomerRequest Details 
+	 * @param CustomerRequest
+	 * @return
+	 */
 	public List<Location> getLocationDetails(CustomerRequest details);
+	
+	/**
+	 * Method to list names of locations
+	 * @return
+	 */
 	List<String> listOfLocations();
 }

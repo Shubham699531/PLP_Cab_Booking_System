@@ -1,0 +1,40 @@
+<div *ngIf="confirmedTrip">
+  <table class="table table-bordered" >
+   <tr>
+     <th><h1>Trip Details</h1></th>
+   </tr>
+   <tr>
+     <td>Customer name: </td>  <td> {{customer.name}}</td>
+   </tr>
+   <tr>
+     <td>Pickup location: </td>  <td>{{booking.source}}</td>
+   </tr>
+   <tr>
+     <td>Drop location:</td>  <td> {{booking.destination}}</td>
+   </tr>
+   <form (ngSubmit)="startTrip()">
+    <div class="form group">
+      <button type="submit" class="btn btn-success">Start Trip</button>
+    </div>
+  </form>
+ </table>
+ </div>
+ 
+<div *ngIf="!confirmedTrip">
+    <h3>No Ongoing Trips</h3>
+</div>
+<div *ngIf="started" >
+    <h3>Timer</h3>
+  <h2>{{i}}</h2>
+  <form (ngSubmit)="endTrip()">
+    <div class="form group">
+      <button type="submit" class="btn btn-success">End Trip</button>
+    </div>
+  </form>
+</div>
+<div *ngIf="completed">
+    <h3>Timer</h3>
+    <h2>{{i}}</h2> 
+  <h1>Trip Completed</h1>
+  <h2>Fare: {{booking.finalFare}}</h2>
+</div>

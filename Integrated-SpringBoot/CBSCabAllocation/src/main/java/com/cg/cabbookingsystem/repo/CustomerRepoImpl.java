@@ -7,6 +7,7 @@ import javax.persistence.PersistenceContext;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.cg.cabbookingsystem.dto.Booking;
 import com.cg.cabbookingsystem.dto.Customer;
@@ -73,5 +74,9 @@ public class CustomerRepoImpl implements CustomerRepo {
 	@Override
 	public Location getLocationByName(String locationName) {
 		return mgr.createNamedQuery("fetchLocationByName", Location.class).setParameter("name", locationName).getSingleResult();
+	}
+	
+	public Booking checkRatedStatus(@RequestParam int customerId) {
+		return mgr.createNamedQuery("checkRatedBookingStatus", Booking.class).setParameter("customerId", customerId).getSingleResult();
 	}
 }

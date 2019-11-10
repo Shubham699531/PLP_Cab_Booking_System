@@ -82,7 +82,7 @@ public class PaymentFeedbackServiceImplTest {
 		book.setTripStatus("Over");
 		List<Booking> tr = new ArrayList<Booking>();
 		tr.add(book);
-		System.out.println(service.updateCustomer(book));
+		//System.out.println(service.updateCustomer(book));
 	}
 
 }

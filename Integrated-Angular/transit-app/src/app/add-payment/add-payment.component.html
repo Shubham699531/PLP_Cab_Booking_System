@@ -1,0 +1,38 @@
+<form (ngSubmit)= 'checkBalance()'>
+<div class="row">
+  <div class="col-xs-2"></div>
+  <div class="col-xs-8">
+    <table>
+      <tr>
+        <th>Customer ID</th>
+        <td>{{book.customerId}}</td>
+      </tr>
+      <tr>
+        <th>Booking ID</th>
+        <td>{{book.bookingId}}</td>
+      </tr>
+      <tr>
+        <th>Driver ID</th>
+        <td>{{book.driverId}}</td>
+      </tr>
+      <tr>
+        <th>Final Fare</th>
+        <td>{{book.finalFare}}</td>
+      </tr>
+      <tr>
+      <div [hidden]="found">
+        <button type="submit" class="btn btn-success" >PAY</button> 
+        <td></td>
+      </div></tr>
+      <tr>
+      <div [hidden]="!found">
+        <button type="submit" class="btn btn-success" >ADD & PAY</button> 
+        <td></td>
+      </div>
+    </tr>
+    </table>
+  </div>
+  <div class="col-xs-2"></div>
+</div>
+</form>
+

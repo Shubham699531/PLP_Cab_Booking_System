@@ -1,0 +1,111 @@
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 254 at 1573241726261
+[http-nio-8882-exec-5] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 254
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 259 at 1573241770237
+[http-nio-8882-exec-7] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 259
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: asc
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : asc with messsage: No entity found for query
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573392832361 is :1
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573392881552 is :1
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573393158414 is :1
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573396158300 is :1
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573396300868 is :1
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573399259281 is :1
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573400464914 is :1
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573404270777 is :1
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573404362751 is :1
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573404643013 is :1
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573404760993 is :1
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573405129631 is :1
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573405219269 is :1
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573405512844 is :1
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573405630557 is :1
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573406573265 is :1
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abcg@gmail.com
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Sbhjasasb
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Sbhjasasb with messsage: No entity found for query
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 455 at 1573407396227
+[http-nio-8882-exec-2] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 455
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 455 at 1573407396325
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 455
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abcg@gmail.com
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 455 at 1573407529257
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 503
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 503 Exception thrown: No entity found for query
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573407734007 is :1
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 455 at 1573407739989
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 503
+[http-nio-8882-exec-2] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 503 Exception thrown: No entity found for query
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Sbhjasasb
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Sbhjasasb with messsage: No entity found for query
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abcg@gmail.com
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573407981810 is :1
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 503
+[http-nio-8882-exec-10] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 503 Exception thrown: No entity found for query
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 455 at 1573408036092
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 503
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 503 Exception thrown: No entity found for query
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Sbhjasasb
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Sbhjasasb with messsage: No entity found for query
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abcg@gmail.com
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 455 at 1573408226622
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 503
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 503 Exception thrown: No entity found for query
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Sbhjasasb
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Sbhjasasb with messsage: No entity found for query
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abcg@gmail.com
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 455 at 1573408404405
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 503
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 503 Exception thrown: No entity found for query
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abcg@gmail.com
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: HJvvjjkd wk
+[http-nio-8882-exec-2] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : HJvvjjkd wk with messsage: No entity found for query
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: dilipkumar531@yahoo.coin
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 455 at 1573409006767
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 456
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: HJvvjjkd wk
+[http-nio-8882-exec-5] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : HJvvjjkd wk with messsage: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: dilipkumar531@yahoo.coin
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 456
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 455 at 1573409060117
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 456
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 455 at 1573409066450
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 456
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: HJvvjjkd wk
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : HJvvjjkd wk with messsage: No entity found for query
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: dilipkumar531@yahoo.coin
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 456
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: HJvvjjkd wk
+[http-nio-8882-exec-5] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : HJvvjjkd wk with messsage: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: dilipkumar531@yahoo.coin
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 456
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: HJvvjjkd wk
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : HJvvjjkd wk with messsage: No entity found for query
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: dilipkumar531@yahoo.coin
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 456
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: dilipkumar531@yahoo.coin
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 455 at 1573409590760
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 456
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: HJvvjjkd wk
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : HJvvjjkd wk with messsage: No entity found for query
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: dilipkumar531@yahoo.coin
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 456
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 0 at 1573409969502
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 0
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 0 at 1573409969615
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 0
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: dilipkumar531@yahoo.coin
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 0 at 1573409974927
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 0
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 0 at 1573409974972
+[http-nio-8882-exec-2] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 0
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 456
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 0 at 1573410031729
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 0
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 0 at 1573410031773
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 0
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: dilipkumar531@yahoo.coin
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 0 at 1573410037433
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 0
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 0 at 1573410037487
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 0
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 456
