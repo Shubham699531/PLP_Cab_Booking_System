@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.cg.cabbookingsystem.service;
 
 import java.util.Optional;
@@ -20,6 +17,8 @@ import com.cg.cabbookingsystem.repo.PricingRepo;
 import com.cg.cabbookingsystem.repo.VehicleRepo;
 
 /**
+ * Implementation of transit service interface for business logic layer.
+ *
  * @author Aman Dungarwal
  * @version 1.0
  */
@@ -28,27 +27,53 @@ import com.cg.cabbookingsystem.repo.VehicleRepo;
 @Transactional(rollbackFor = InvalidBookingException.class)
 public class TransitServiceImpl implements TransitService {
 
+	/** The booking repository. */
 	@Autowired
 	private BookingRepo bookingRepo;
+
+	/** The driver repository. */
 	@Autowired
 	private DriverRepo driverRepo;
+
+	/** The vehicle repository. */
 	@Autowired
 	private VehicleRepo vehicleRepo;
+
+	/** The price repository. */
 	@Autowired
 	private PricingRepo priceRepo;
 
+	/**
+	 * Start the trip.
+	 *
+	 * @param booking the booking
+	 * @return the booking
+	 */
 	@Override
 	public Booking startTrip(Booking booking) {
 		booking.setTripStatus("Started");
 		return bookingRepo.save(booking);
 	}
 
+	/**
+	 * End the trip.
+	 *
+	 * @param booking the booking
+	 * @return the booking
+	 */
 	@Override
 	public Booking endTrip(Booking booking) {
 		booking.setTripStatus("Completed");
 		return bookingRepo.save(booking);
 	}
 
+	/**
+	 * Rate the trip.
+	 *
+	 * @param booking the booking
+	 * @return the booking
+	 * @throws InvalidBookingException the invalid booking exception
+	 */
 	@Override
 	public Booking rateTrip(Booking booking) throws InvalidBookingException {
 		booking.setTripStatus("Rated");
@@ -59,6 +84,13 @@ public class TransitServiceImpl implements TransitService {
 		return bookingRepo.save(booking);
 	}
 
+	/**
+	 * Update driver rating and status.
+	 *
+	 * @param booking the booking
+	 * @return the driver
+	 * @throws InvalidBookingException the invalid booking exception
+	 */
 	@Override
 	public Driver updateDriverRating(Booking booking) throws InvalidBookingException {
 		int driverId = booking.getDriverId();
@@ -71,16 +103,29 @@ public class TransitServiceImpl implements TransitService {
 			throw new InvalidBookingException("No Driver with id " + driverId);
 
 		int numberOfTrips = driver.getNumberOfTrips();
-		numberOfTrips+=1;
+		numberOfTrips += 1;
 		driver.setNumberOfTrips(numberOfTrips);
+
+		// Generate average rating for driver
 		double rating = driver.getRating();
 		rating = rating + (booking.getRating() - rating) / numberOfTrips;
+		// Minimum rating = 0
 		rating = (rating < 0) ? 0 : rating;
 		driver.setRating(rating);
+
+		// Set status to free for the driver
 		driver.setDriverStatus("Free");
 		return driverRepo.saveAndFlush(driver);
 	}
 
+	/**
+	 * Update vehicle status.
+	 *
+	 * @param booking the booking
+	 * @param driver  the driver
+	 * @return the vehicle
+	 * @throws InvalidBookingException the invalid booking exception
+	 */
 	@Override
 	public Vehicle updateVehicleStatus(Booking booking, Driver driver) throws InvalidBookingException {
 		String vehicleNo = driver.getVehicleNo();
@@ -92,11 +137,22 @@ public class TransitServiceImpl implements TransitService {
 		else
 			throw new InvalidBookingException("Vehicle not found for vehicle number " + vehicleNo);
 
+		// Set the final location of the vehicle to destination of booking
 		vehicle.setLocation(booking.getDestination());
+
+		// Set the vehicle status to free
 		vehicle.setStatus("Free");
 		return vehicleRepo.saveAndFlush(vehicle);
 	}
 
+	/**
+	 * Final fare generation.
+	 *
+	 * @param booking the booking
+	 * @param vehicle the vehicle
+	 * @return the double
+	 * @throws InvalidBookingException the invalid booking exception
+	 */
 	@Override
 	public double finalFareGeneration(Booking booking, Vehicle vehicle) throws InvalidBookingException {
 		Optional<Pricing> optionalPrice = priceRepo.findById(vehicle.getCategoryId());
@@ -106,13 +162,14 @@ public class TransitServiceImpl implements TransitService {
 			price = optionalPrice.get();
 		else
 			throw new InvalidBookingException("Invalid vehicle size");
+
+		// Use estimated fare and difference in estimated and final time to calculate
+		// dynamic final fare.
 		double extraFare = price.getWaitingChargePerMin() * (booking.getFinalTime() - booking.getEstimatedTime());
+
+		// Avoiding reduction in estimated fare.
 		extraFare = (extraFare < 0) ? 0 : extraFare;
 		return booking.getEstimatedFare() + extraFare;
 	}
 
-	@Override
-	public Booking getBooking() {
-		return bookingRepo.findById(124).get();
-	}
 }

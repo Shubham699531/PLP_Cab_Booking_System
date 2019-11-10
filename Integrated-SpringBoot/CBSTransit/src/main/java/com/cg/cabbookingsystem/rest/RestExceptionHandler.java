@@ -12,17 +12,27 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 import com.cg.cabbookingsystem.exception.InvalidBookingException;
 
+/**
+ * Exception handler for rest components
+ * 
+ * @author Aman Dungarwal
+ * @version 1.0
+ */
 @Order(Ordered.HIGHEST_PRECEDENCE)
 @ControllerAdvice
 @RestController
 public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 
+	/**
+	 * Handle invalid booking.
+	 *
+	 * @param exception the exception
+	 * @return the response entity
+	 */
 	@ExceptionHandler(InvalidBookingException.class)
 	@ResponseBody
-	public ResponseEntity<Object> handleInvalidMovie(
-			InvalidBookingException exception) {
-		
-		return new ResponseEntity<>(exception.getMessage(),
-				HttpStatus.NOT_FOUND);
+	public ResponseEntity<Object> handleInvalidBooking(InvalidBookingException exception) {
+
+		return new ResponseEntity<>(exception.getMessage(), HttpStatus.NOT_FOUND);
 	}
 }
