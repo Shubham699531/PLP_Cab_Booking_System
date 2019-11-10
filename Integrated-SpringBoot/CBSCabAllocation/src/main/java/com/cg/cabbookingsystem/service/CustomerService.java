@@ -2,6 +2,8 @@ package com.cg.cabbookingsystem.service;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.RequestParam;
+
 import com.cg.cabbookingsystem.dto.Booking;
 import com.cg.cabbookingsystem.dto.Customer;
 import com.cg.cabbookingsystem.dto.CustomerRequest;
@@ -57,4 +59,6 @@ public interface CustomerService {
 	public double calculateDistance(String source, String destination);
 
 	public Location getLocationByName(String locationName);
+	
+	public Booking checkRatedStatus(@RequestParam int customerId);
 }

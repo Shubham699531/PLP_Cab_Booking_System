@@ -50,6 +50,20 @@ public class CabDaoImpl implements ICabDao {
 
 	@Override
 	public Vehicle saveVehicle(Vehicle vehicle) {
+		System.out.println(vehicle.getVehicleNo()+ vehicle.getSize()+vehicle.getStatus()+vehicle.getLocation());
+//		if(vehicle.getModel().equals("mini")){
+//			vehicle.setSize(1);
+//		    }
+//		    else if(vehicle.getModel().equals("micro")){
+//		    	vehicle.setSize(2);
+//		    }
+//		    else if(vehicle.getModel().equals("sedan")){
+//		    	vehicle.setSize(3);
+//		    }
+//		    else{
+//		      vehicle.setSize(4);
+//		    }
+//		vehicle.setStatus("free");
 		mgr.persist(vehicle);
 		return vehicle;
 	}
@@ -63,7 +77,7 @@ public class CabDaoImpl implements ICabDao {
 					.setParameter("email", user.getEmail()).getSingleResult();
 			System.out.println("@@@@@@" + cust.getEmail());
 			if (cust.getPassword().equals(user.getPassword())) {
-				System.out.println("%%%%%%%%%%%" + cust.getId());
+				System.out.println("%%%%%%%%%%%" + cust.getCustomerId());
 				return cust;
 			}
 			 myLogger.info("Customer found");
@@ -74,8 +88,8 @@ public class CabDaoImpl implements ICabDao {
 			throw new UserNotFoundException("Invalid Login Credentials");
 		}
 		cust = new Customer();
-		cust.setId(-1);
-		System.out.println(cust.getId() + "######");
+		cust.setCustomerId(-1);
+		System.out.println(cust.getCustomerId() + "######");
 		return cust;
 	}
 
@@ -93,7 +107,7 @@ public class CabDaoImpl implements ICabDao {
 		} catch (Exception e) {
 			myLogger.error("Customer Persist Failed");
 			customer = new Customer();
-			customer.setId(-1);
+			customer.setCustomerId(-1);
 			e.printStackTrace();
 		}
 		return customer;

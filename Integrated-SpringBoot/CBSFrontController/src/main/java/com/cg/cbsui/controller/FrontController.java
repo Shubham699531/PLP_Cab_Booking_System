@@ -28,6 +28,7 @@ import com.cg.cbsui.dto.Vehicle;
 import com.cg.cbsui.exception.DriverNotFoundException;
 import com.cg.cbsui.exception.InsufficientWalletBalanceException;
 import com.cg.cbsui.exception.InvalidBookingException;
+import com.cg.cbsui.exception.UserNotFoundException;
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping(value = "/cbs")
@@ -46,7 +47,7 @@ public class FrontController {
 			,produces = "application/json")
 	Customer loginCustomer(@RequestBody Users user) {
 		Customer cust = restTemplate.postForObject("http://localhost:8880/cab/loginCustomer", user, Customer.class); 
-		System.out.println("%%%%%%%%%%%" + cust.getId());
+		System.out.println("%%%%%%%%%%%" + cust.getCustomerId());
 		return cust;
 	}
 	
@@ -61,7 +62,7 @@ public class FrontController {
 	//Surjani $
 		//http://localhost:8180/cbs/loginDriver
 		@PostMapping(value = "/loginDriver")
-		public Driver validateDriver(@RequestBody Users user) {
+		public Driver validateDriver(@RequestBody Users user) throws UserNotFoundException{
 			return restTemplate.postForObject("http://localhost:8880/cab/loginDriver", user, Driver.class);
 		}
 		
@@ -69,7 +70,7 @@ public class FrontController {
  		//http://localhost:8180/cbs/signupDriver
 		@PostMapping(value = "/signupDriver")
 		public Driver saveDriver(@RequestBody Driver driver) {
-			Driver saveDriver = restTemplate.postForObject("/http://localhost:8880/cab/saveDriver", driver, Driver.class);
+			Driver saveDriver = restTemplate.postForObject("http://localhost:8880/cab/saveDriver", driver, Driver.class);
 			return saveDriver;
 		}
 		
@@ -119,7 +120,9 @@ public class FrontController {
 	//http://localhost:8180/cbs/getBookingForADriver?driverId=
 	@GetMapping(value = "/getBookingForADriver")
 	public Booking getBookingForADriver(@RequestParam int driverId) {
-		return restTemplate.getForObject("http://localhost:8882/driver/getBooking?driverId="+driverId, Booking.class, driverId);
+		Booking booking = restTemplate.getForObject("http://localhost:8882/driver/getBooking?driverId="+driverId, Booking.class, driverId);
+		System.out.println("RRRR" + booking.getBookingId() + "DDD" + booking.getCustomerId());
+		return booking;
 	}
 	
 	//Shubham $
@@ -193,6 +196,15 @@ public class FrontController {
 	public Booking endTrip(@RequestBody Booking booking) {
 		
 		return restTemplate.postForObject("http://localhost:8810/transit/endTrip", booking, Booking.class);
+	}
+	
+	//THIS IS NEW 
+	/////////////////////VISHAL's FUNCTION/////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////
+	//http://localhost:8180/cbs/checkBookingStatus
+	@GetMapping(value = "/checkBookingStatus")
+	public Booking checkRatedStatus(@RequestParam int customerId) {
+		return restTemplate.getForObject("http://localhost:8082/customer/getRatedStatus?customerId=" + customerId, Booking.class);
 	}
 	
 	//Aman $

@@ -6,7 +6,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
-
+/**
+ * DTO for holding customer trip details 
+ * @author Akash
+ *
+ */
 
 @Entity
 @SequenceGenerator(name = "request_seq",sequenceName = "seq_request")

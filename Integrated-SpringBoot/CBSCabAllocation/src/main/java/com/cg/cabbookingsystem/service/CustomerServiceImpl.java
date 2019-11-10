@@ -108,4 +108,9 @@ public class CustomerServiceImpl implements CustomerService {
 		return repo.getLocationByName(locationName);
 	}
 
+	@Override
+	public Booking checkRatedStatus(int customerId) {
+		return repo.checkRatedStatus(customerId);
+	}
+
 }

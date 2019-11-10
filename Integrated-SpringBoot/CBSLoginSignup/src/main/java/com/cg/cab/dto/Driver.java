@@ -22,7 +22,6 @@ public class Driver {
 	private String name;
 	@Column(length = 50)
 	private String password;
-	@JsonFormat(pattern = "dd-MM-yyyy")
 	private Date dob;
 	@Column(length = 50)
 	private String gender;

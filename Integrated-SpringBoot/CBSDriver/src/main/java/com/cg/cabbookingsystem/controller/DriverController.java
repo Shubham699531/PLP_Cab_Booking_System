@@ -113,7 +113,10 @@ public class DriverController {
 	@GetMapping(value = "/getBooking")
 	public Booking getBookingForADriver(@RequestParam int driverId) throws NoBookingFoundException{
 		myLogger.debug("Getting booking details for driver with driver Id: " + driverId);
-		return service.getBookingDetailsForADriver(driverId);
+		System.out.println("IDIDIDIDDIDI" + driverId);
+		Booking booking = service.getBookingDetailsForADriver(driverId);
+		System.out.println("BBB" + booking.getBookingId());
+		return booking;
 	} 
 
 }

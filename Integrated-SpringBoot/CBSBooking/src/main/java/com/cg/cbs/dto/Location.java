@@ -8,6 +8,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
 
+/**
+ * DTO for holding Location Details
+ * @author Akash
+ *
+ */
 @Entity
 @NamedQuery(name = "fetchByName", query = "FROM Location Where name=:name")
 @NamedQuery(name = "getCoordinates" , query = "FROM Location WHERE name=:name")
