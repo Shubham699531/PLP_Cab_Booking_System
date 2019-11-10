@@ -1,0 +1,58 @@
+ insert into location values('Powai',1,1);
+
+
+ insert into location values('Andheri',1,2);
+
+
+ insert into location values('Juhu',0,0);
+
+
+ insert into location values('Airoli',1,3);
+
+
+ insert into location values('Kalwa',1,4);
+
+
+ insert into location values('Thane',1,5);
+
+
+ insert into location values('Kandivali',1,6);
+
+
+ insert into location values('Goregaon',1,7);
+
+
+ insert into location values('Marol',2,1);
+
+
+ insert into location values('Oshiwara',2,2);
+
+
+ insert into location values('Aarey Colony',2,3);
+
+
+ insert into location values('IIT Bombay',2,4);
+
+
+ insert into location values('Borivali',2,5);
+
+
+ insert into location values('Dombivali',2,6);
+
+
+ insert into location values('Mulund West',3,1);
+
+
+ insert into location values('SGNP',3,2);
+
+
+ insert into location values('Kanjurmarg East',3,3);
+
+
+ insert into location values('Ghansoli',3,4);
+
+
+ insert into location values('Mahape',3,5);
+
+
+ insert into location values('Charkop Gaon',4,1);
