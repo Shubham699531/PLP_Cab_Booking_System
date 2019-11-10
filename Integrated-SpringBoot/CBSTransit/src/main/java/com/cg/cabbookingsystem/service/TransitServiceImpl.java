@@ -2,6 +2,7 @@ package com.cg.cabbookingsystem.service;
 
 import java.util.Optional;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -43,6 +44,8 @@ public class TransitServiceImpl implements TransitService {
 	@Autowired
 	private PricingRepo priceRepo;
 
+	static Logger myLogger = Logger.getLogger(TransitServiceImpl.class.getName());
+
 	/**
 	 * Start the trip.
 	 *
@@ -52,6 +55,7 @@ public class TransitServiceImpl implements TransitService {
 	@Override
 	public Booking startTrip(Booking booking) {
 		booking.setTripStatus("Started");
+		myLogger.info("Trip Started");
 		return bookingRepo.save(booking);
 	}
 
@@ -64,6 +68,7 @@ public class TransitServiceImpl implements TransitService {
 	@Override
 	public Booking endTrip(Booking booking) {
 		booking.setTripStatus("Completed");
+		myLogger.info("Trip Ended");
 		return bookingRepo.save(booking);
 	}
 
@@ -77,10 +82,12 @@ public class TransitServiceImpl implements TransitService {
 	@Override
 	public Booking rateTrip(Booking booking) throws InvalidBookingException {
 		booking.setTripStatus("Rated");
+		myLogger.info("Trip Status changed to rated");
 		Driver driver = updateDriverRating(booking);
 		Vehicle vehicle = updateVehicleStatus(booking, driver);
 		double finalFare = finalFareGeneration(booking, vehicle);
 		booking.setFinalFare(finalFare);
+		myLogger.info("Trip Rated");
 		return bookingRepo.save(booking);
 	}
 
@@ -97,10 +104,13 @@ public class TransitServiceImpl implements TransitService {
 		Optional<Driver> optionalDriver = driverRepo.findById(driverId);
 		Driver driver = null;
 
-		if (optionalDriver.isPresent())
+		if (optionalDriver.isPresent()) {
+			myLogger.info("Driver with driverId " + driverId + " found");
 			driver = optionalDriver.get();
-		else
+		} else {
+			myLogger.error("Driver with driverId " + driverId + " not found");
 			throw new InvalidBookingException("No Driver with id " + driverId);
+		}
 
 		int numberOfTrips = driver.getNumberOfTrips();
 		numberOfTrips += 1;
@@ -115,6 +125,9 @@ public class TransitServiceImpl implements TransitService {
 
 		// Set status to free for the driver
 		driver.setDriverStatus("Free");
+		myLogger.info("Driver Rating and status updated");
+
+
 		return driverRepo.saveAndFlush(driver);
 	}
 
@@ -132,16 +145,19 @@ public class TransitServiceImpl implements TransitService {
 		Optional<Vehicle> optionalVehicle = vehicleRepo.findById(vehicleNo);
 		Vehicle vehicle = null;
 
-		if (optionalVehicle.isPresent())
+		if (optionalVehicle.isPresent()) {
+			myLogger.info("Vehicle with vehicle no. " + vehicleNo + " found");
 			vehicle = optionalVehicle.get();
-		else
+		} else {
+			myLogger.error("Vehicle with vehicle no. " + vehicleNo + " not found");
 			throw new InvalidBookingException("Vehicle not found for vehicle number " + vehicleNo);
-
+		}
 		// Set the final location of the vehicle to destination of booking
 		vehicle.setLocation(booking.getDestination());
 
 		// Set the vehicle status to free
 		vehicle.setStatus("Free");
+		myLogger.info("Vehicle status and location updated");
 		return vehicleRepo.saveAndFlush(vehicle);
 	}
 
@@ -158,11 +174,13 @@ public class TransitServiceImpl implements TransitService {
 		Optional<Pricing> optionalPrice = priceRepo.findById(vehicle.getCategoryId());
 
 		Pricing price;
-		if (optionalPrice.isPresent())
+		if (optionalPrice.isPresent()) {
+			myLogger.info("Pricing for category Id " + vehicle.getCategoryId() + " found");
 			price = optionalPrice.get();
-		else
+		} else {
+			myLogger.error("Pricing for category Id " + vehicle.getCategoryId() + " not found");
 			throw new InvalidBookingException("Invalid vehicle size");
-
+		}
 		// Use estimated fare and difference in estimated and final time to calculate
 		// dynamic final fare.
 		double extraFare = price.getWaitingChargePerMin() * (booking.getFinalTime() - booking.getEstimatedTime());
