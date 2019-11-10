@@ -1,0 +1,151 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://localhost:4200/home"> Home</a>
+      </div>
+      <ul class="nav navbar-nav">
+     
+         <a href="http://localhost:4200/list" class="navbar-brand" style="font-size: large;">Driver Verification</a>&nbsp;&nbsp;&nbsp;
+         <a href="http://localhost:4200/report" class="navbar-brand" style="font-size: large;">Customer Issues</a>&nbsp;&nbsp;&nbsp;
+         <a href="http://localhost:4200/bookingdetails" class="navbar-brand" style="font-size: large;">Booking Details</a>
+         
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+
+  </div> 
+  <h2 style="color:rgb(84, 15, 211); text-align: center;">Welcome to Admin Service</h2>
+
+
+<div class="row" >
+    <div class="col-md-3 mx-auto" > 
+     <div class="card rounded-0" >
+        <div class="card-header">
+           
+           
+        </div>
+        <div class="col-sm-50 col-md-15 col-md-offset-1">  
+            <h3 class="mb-0">Driver Details</h3>
+    <form (ngSubmit)="onUpdate()" #addForm="ngForm">
+      
+       
+    <div class="form-group required">
+      <label class="control-label" for="name">Name</label>
+      <input name="name" [(ngModel)]=driver.name #name=ngModel class="form-control rounded-0" required pattern= "[A-Za-z]{2,}" placeholder="Enter Name">
+         <span *ngIf="name.touched && name.invalid &&
+         (name.errors.required || name.errors.pattern)" class=" alert-warning">
+          Invalid Name or name cannot be empty
+        </span>
+    </div>
+    <div class="form-group required">
+        <label class="control-label" for="dob">Date of Birth</label>
+        <input id="dob"  name="dob" type="text" #dob=ngModel  class="form-control rounded-0"  [(ngModel)]=driver.dob required placeholder="Date of Earth">
+        <span *ngIf="dob.touched && dob.invalid &&
+        (dob.errors.required || dob.errors.pattern)" class="alert-warning">
+         Please Write Date of Birth
+       </span>
+       </div>
+
+        <div class="form-group required">
+    <label class="control-label" for="gender">Gender</label><br>
+    
+        <input type="radio" value="Male" name="gender" [(ngModel)]=driver.gender  #gender=ngModel required> Male
+        <input type="radio" value="Female" name="gender" [(ngModel)]=driver.gender #gender=ngModel required > Female
+        <input type="radio" value="Other" name="gender" [(ngModel)]=driver.gender  #gender=ngModel required> Other
+     
+      <!-- <input name="gender" [(ngModel)]=driver.gender #gender=ngModel class="form-control rounded-0" placeholder="Enter Gender"> -->
+         <span *ngIf="gender.touched && gender.invalid &&
+         (gender.errors.required || gender.errors.pattern)" class="alert-warning">
+          Please Select Gender
+        </span>
+        </div>
+     
+ 
+        <div class="form-group required">
+    <label class="control-label" for="contactNo">Mobile No</label>
+      <input type="text" name="contactNo" [(ngModel)]=driver.contactNo #contactNo=ngModel class="form-control rounded-0" required pattern="[6-9][0-9]{9}" placeholder="Enter Mobile No">
+      <span *ngIf="contactNo.touched && contactNo.invalid && 
+      (contactNo.errors.required || contactNo.errors.pattern)" class="alert-warning">
+        Invalid Mobile No. or mobile no cannot be empty!
+      </span>
+      </div>
+      <div class="form-group required">
+          <label class="control-label" for="address">Address</label>
+            <input type="text" name="address" [(ngModel)]=driver.address #address=ngModel class="form-control rounded-0" required placeholder="Enter Address">
+            <span *ngIf="address.touched && address.invalid && 
+            (address.errors.required || address.errors.pattern)" class="alert-warning">
+            Please write correct address details
+            </span>
+            </div>
+     
+      <div class="form-group required">
+     <label class="control-label" for="vehicle">Vehicle Number</label>
+      <input name="vehicleNo" [(ngModel)]=driver.vehicleNo #vehicleNo=ngModel class="form-control rounded-0"  required pattern="[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4}" placeholder="MH43BA8192">
+         <span *ngIf="vehicleNo.touched && vehicleNo.invalid &&
+         (vehicleNo.errors.required || vehicleNo.errors.pattern)" class="alert-warning">
+         Invalid Vehicle No. or vehicle no cannot be empty!
+        </span>
+        </div>
+       
+        <div class="form-group required">
+          <label class="control-label" for="driverStatus">Status</label>
+            <select name="driverStatus" id="driverStatus" [(ngModel)]=driver.driverStatus #status=ngModel class="form-control rounded-0"  required placeholder="Enter Status">
+              <option *ngFor="let d of driverStatus" [value]="d">{{d}}</option>
+              </select>
+               <span *ngIf="driverStatus.touched && driverStatus.invalid &&
+               (driverStatus.errors.required || driverStatus.errors.pattern)" class="alert-warning">
+                Please Select the correct Status!!
+              </span>
+         </div>
+         <div class="form-group required">
+         <label class="control-label" for="email">Email</label>
+          <input name="email" [(ngModel)]=driver.email #email=ngModel type="email" class="form-control rounded-0" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" placeholder="abc@gmail.com">
+          <span *ngIf="email.touched && email.invalid &&
+          (email.errors.required || email.errors.pattern)" class="alert-warning">
+          Invalid Email ID or email cannot be empty
+          </span>
+          
+        </div>
+        
+        <div class="form-group required">
+          <label class="control-label" for="password">Password</label>
+            <input type="password" name="password" [(ngModel)]=driver.password #password=ngModel class="form-control rounded-0" required pattern=".{5,}"  placeholder="Enter Password">
+            <span *ngIf="password.touched && password.invalid && 
+            (password.errors.required || password.errors.pattern)" class="alert-warning">
+              Invalid Password it should contain atleast 5 characters
+            </span>
+            </div>
+        <div class="form-group required">
+          <label class="control-label" for="numberOfTrips">Trips</label>
+           <input name="numberOfTrips" [(ngModel)]=driver.numberOfTrips #numberOfTrips=ngModel class="form-control rounded-0" required pattern="[0-9]{1,}" placeholder="Enter No OF Trips" required>
+           <span *ngIf="numberOfTrips.touched && numberOfTrips.invalid &&
+           (numberOfTrips.errors.required || numberOfTrips.errors.pattern)" class="alert-warning">
+            Invalid no of trips
+           </span>
+           
+         </div>
+         <div class="form-group required">
+        <label class="control-label" for="drivingLicense">DL Number</label>
+           <input name="drivingLicense" [(ngModel)]=driver.drivingLicense #drivingLicense=ngModel class="form-control rounded-0" required pattern="[A-Z]{2}[0-9]{13}"   placeholder="MH1420110062821">
+           <span *ngIf="drivingLicense.touched && drivingLicense.invalid &&
+           (drivingLicense.errors.required || drivingLicense.errors.pattern)" class="alert-warning">
+           Invalid Driver Licence 
+           </span>
+           
+         </div>
+         <div class="form-group required">
+          <label class="control-label" for="rating">Rating</label>
+             <input name="rating" [(ngModel)]=driver.rating #rating=ngModel class="form-control rounded-0"   placeholder="Enter Rating" required pattern="[0-9]{1}">
+             <span *ngIf="rating.touched && rating.invalid &&
+             (rating.errors.required || rating.errors.pattern)" class="alert-warning">
+           Please write correct Rating
+             </span>
+             
+           </div>
+    <button type="submit"  [disabled]="!addForm.valid"  class="btn btn-success">Update</button>
+  </form>
+
+</div>
+ </div>
+ </div>

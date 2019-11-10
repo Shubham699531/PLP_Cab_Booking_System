@@ -1,0 +1,75 @@
+<head>
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .checked {
+      color: orange;
+    }
+    </style>
+    </head>
+
+<h2>Booking Status: {{booking.tripStatus}}</h2>
+
+<div>
+    <table class="table table-bordered">
+      <tr><th>Driver Information</th></tr>
+        <tr><th>Name</th><th>Address</th><th>Vehicle No</th><th>Contact</th><th>Number Of Trips</th></tr>
+        <tr>
+          <td>{{driver.name}}</td>
+          <td>{{driver.address}}</td>
+          <td>{{driver.vehicleNo}}</td>
+          <td>{{driver.contactNo}}</td>
+          <td>{{driver.numberOfTrips}}</td>
+        </tr>
+      </table>
+  </div>
+  <button class="btn btn-primary" (click)="checkStatus()">Check</button>
+
+<div *ngIf="showRating">
+    <h4>Rate the trip</h4>
+    <form (ngSubmit)="setRating()">
+            <form class="rating">
+              <label>
+                <input [(ngModel)]=rating type="radio" name="rating" value="1" />
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input [(ngModel)]=rating type="radio" name="rating" value="2" />
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input [(ngModel)]=rating type="radio" name="rating" value="3" />
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>   
+              </label>
+              <label>
+                <input [(ngModel)]=rating type="radio" name="rating" value="4" />
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+              <label>
+                <input [(ngModel)]=rating type="radio" name="rating" value="5" />
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+                <span class="icon">★</span>
+              </label>
+            </form>
+            <br>
+            <br>
+  
+      <button type="submit" class="btn btn-success">Rate</button>
+    </form>
+  </div>
+  <div [hidden]="!(booking.tripStatus==rated)">
+    <form (ngSubmit)="payment()">
+      <h3>Final Fare = Rs. {{booking.finalFare}}</h3>
+      <br><br>
+      <button type="submit" class="btn btn-success">Payment</button>
+    </form>
+  </div>

@@ -1,0 +1,21 @@
+<div [hidden]="started">
+  <form (ngSubmit)="startTrip()">
+    <div class="form group">
+      <button type="submit" class="btn btn-success">Start Trip</button>
+    </div>
+  </form>
+</div>
+<div [hidden]="!started || completed">
+    <h3>Timer</h3>
+  <h2>{{i}}</h2>
+  <form (ngSubmit)="endTrip()">
+    <div class="form group">
+      <button type="submit" class="btn btn-success">End Trip</button>
+    </div>
+  </form>
+</div>
+<div [hidden]="!completed">
+    <h3>Timer</h3>
+    <h2>{{i}}</h2> 
+  <h1>Trip Completed</h1>
+</div>

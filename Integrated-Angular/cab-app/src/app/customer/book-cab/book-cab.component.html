@@ -1,0 +1,85 @@
+<div class="col-xs-6 well well-lg" name="form-div">
+  <form class="form-horizontal" #tripForm="ngForm" (ngSubmit)="estimatePrice()">
+
+    <div class="form-group">
+      <label for="source" class="control-label col-sm-4">Source</label>
+      <div class="col-sm-6">
+        <select class="form-control" #source=ngModel [(ngModel)]=tripdetails.source name="source">
+          <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+        </select>
+      </div>
+      <span *ngIf=" source.touched && source.invalid " class="alert-warning">Invalid Source</span>
+    </div>
+    <div class="form-group">
+      <label for="destination" class="control-label col-sm-4">Destination</label>
+      <div class="col-sm-6">
+        <select class="form-control" #destination=ngModel [(ngModel)]=tripdetails.destination name="destination">
+          <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+        </select>
+        <span *ngIf="destination.dirty && tripdetails.source===tripdetails.destination" class="alert-danger">Source
+          and Destination can't be same!</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="cartype" class="control-label col-sm-4">Model</label>
+      <div class="col-sm-6">
+        <input type="radio" id="cartype-mini" value="mini" name="cartype" #cartype=ngModel ngModel
+          [(ngModel)]=tripdetails.model required> Mini
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="cartype-micro" value="micro" name="cartype" #cartype=ngModel ngModel
+          [(ngModel)]=tripdetails.model required> Micro
+        <br>
+        <input type="radio" id="cartype-sedan" value="sedan" name="cartype" #cartype=ngModel ngModel
+          [(ngModel)]=tripdetails.model required> Sedan
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" id="cartype-suv" value="suv" name="cartype" #cartype=ngModel ngModel
+          [(ngModel)]=tripdetails.model> SUV
+      </div>
+      <div *ngIf="cartype.required">Model is required</div>
+    </div>
+    <div class="col-sm-5"></div>
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2">
+      <button class="btn btn-success" type="submit"
+        [disabled]="!tripForm.valid || tripdetails.source===tripdetails.destination">Estimate Price</button>
+    </div>
+  </form>
+</div>
+<div class="col-xs-2"></div>
+<!-- </div> -->
+<div class="row">
+  <!-- <div class="col-xs-2"></div> -->
+  <div class="col-xs-6" *ngIf="showPriceComp">
+    <div class="card" style="width: 80rem;" style="background-color: rgba(123, 123, 123, .3);">
+      <div class="card-body">
+        <table class="table table-bordered">
+          <tbody>
+            <tr class="active">
+              <th scope="row">Source</th>
+              <th scope="row">Destination</th>
+              <th scope="row">Model</th>
+              <th scope="row">Price</th>
+            </tr>
+            <tr class="success">
+              <td>{{tripdetails.source}}</td>
+              <td>{{tripdetails.destination}}</td>
+              <td>{{tripdetails.model}}</td>
+              <td>Rs. {{fare}}</td>
+            </tr>
+            <tr class="success">
+              <td colspan="4">
+                <p style="text-align: center;">
+                <button class="btn btn-primary" (click)="onConfirm()">Confirm</button>
+              </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-2"></div>
+</div>
+

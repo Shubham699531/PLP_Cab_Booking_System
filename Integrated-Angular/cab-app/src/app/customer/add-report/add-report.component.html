@@ -1,0 +1,18 @@
+<form (ngSubmit)='addRep()' #addForm="ngForm">
+  <div class="form-group">
+    <label for="sel1">Driver Feedback:</label>
+    <select class="form-control" id="sel1" name="type" [(ngModel)]=book.issues required>
+      <option value="null" disabled>--Select Your Issue--</option>
+      <option value="Too Talkative">Too Talkative</option>
+      <option value="Inappropriate Behaviour">Inappropriate Behaviour</option>
+      <option value="Rash Driving">Rash Driving</option>
+      <option value="No Issues">No Issues</option>
+    </select>
+    <br>
+  </div>
+
+  <div class="form-group">
+    <br>
+    <button class="btn btn-success" type="submit">Submit Feedback</button>
+  </div>
+</form>

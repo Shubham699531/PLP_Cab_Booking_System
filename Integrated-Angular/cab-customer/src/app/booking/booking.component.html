@@ -1,0 +1,24 @@
+<div *ngIf = "!notLoggedIn">
+<table class="table table-bordered" >
+  <tr>
+    <th>Booking Details</th>
+  </tr>
+  <tr>
+    <td>Booking Id </td>  <td>{{bookingDetails.bookingId}}</td>
+  </tr>
+  <tr>
+    <td>Source </td>  <td>{{bookingDetails.source}}</td>
+  </tr>
+  <tr>
+    <td>Destination</td>  <td>{{bookingDetails.destination}}</td>
+  </tr>
+  <tr>
+    <td>Vehicle Size</td>  <td>{{bookingDetails.vehicleSize}}</td>
+  </tr>
+  <tr>
+    <td>Driver Id</td>  <td>{{bookingDetails.driverId}}</td>
+  </tr>
+  <!-- <td> {{customer.id}}</td>
+  <td>{{customer.name}}</td> -->
+</table>
+</div>

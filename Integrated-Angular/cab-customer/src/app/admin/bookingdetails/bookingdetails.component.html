@@ -1,0 +1,52 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://localhost:4200/home"> Home</a>
+      </div>
+      <ul class="nav navbar-nav">
+ 
+         <a href="http://localhost:4200/list" class="navbar-brand" style="font-size: large;">Driver Verification</a>&nbsp;&nbsp;&nbsp;
+         <a href="http://localhost:4200/report" class="navbar-brand" style="font-size: large;">Customer Issues</a>&nbsp;&nbsp;&nbsp;
+         <a href="http://localhost:4200/bookingdetails" class="navbar-brand" style="font-size: large;">Booking Details</a>
+        </ul>    
+<button class="btn btn-info" (click)="logOut()">LogOut</button><br><br>
+      
+    </div>
+  </nav>
+  <div class="container-fluid">
+   
+  </div> 
+  <h2 style="color:rgb(84, 15, 211); text-align: center;">Welcome to Admin Service</h2>
+
+<br><br>
+<table class="table table-bordered">
+
+    <tr>
+  <th>Booking Id</th>
+  <th>Cuastomer Id</th>
+  <th>Driver Id</th>
+  <th>Source</th>
+  <th>Destination</th>
+  <th>Estimated Time</th>
+  <th>Estimated Fare</th>
+  <th>Final Fare</th>
+
+  <th>Trip Status</th>
+  <th>Rating</th>
+        
+      </tr>
+      <tr *ngFor="let booking of bookings | paginate: { currentPage: p, itemsPerPage: 4 }; let i = index">
+      <td>{{booking.bookingId}}</td>    
+      <td>{{booking.customerId}}</td>  
+      <td>{{booking.driverId}}</td>  
+      <td>{{booking.source}}</td>  
+      <td>{{booking.destination}}</td>  
+      <td>{{booking.estimatedTime}}</td>  
+      <td>{{booking.estimatedFare}}</td>  
+      <td>{{booking.finalFare}}</td> 
+      <td>{{booking.tripStatus}}</td> 
+      <td>{{booking.rating}}</td> 
+       </tr> 
+       
+  </table>
+  <pagination-controls (pageChange)="p = $event" ></pagination-controls>

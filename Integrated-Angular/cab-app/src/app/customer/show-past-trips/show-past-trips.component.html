@@ -1,0 +1,27 @@
+<div class="col-xs-6">
+    <div class="card" style="width: 80rem;" style="background-color: rgba(123, 123, 123, .3);">
+      <div class="card-body">
+        <table class="table table-hover">
+          <tbody>
+            <tr class="active">
+              <th scope="row">Booking ID</th>
+              <th scope="row">Source</th>
+              <th scope="row">Destination</th>
+              <th scope="row">Driver ID</th>
+              <th scope="row">Price</th>
+              <th scope="row">Rating</th>
+              <th></th>
+            </tr>
+            <tr class="success" *ngFor="let p of pastTrips">
+              <td>{{p.bookingId}}</td>
+              <td>{{p.source}}</td>
+              <td>{{p.destination}}</td>
+              <td>{{p.driverId}}</td>
+              <td>Rs. {{p.fare}}</td>
+              <td>{{p.rating}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

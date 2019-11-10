@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-xs-3">
+      <div class="list-group">
+          <button type="button" class="list-group-item list-group-item-primary" (click)="showAboutDriver()"> About Me</button>
+          <button type="button" class="list-group-item list-group-item-primary" (click)="showPastTrips()">View Past
+              Trips</button>
+          <button type="button" class="list-group-item list-group-item-primary" (click)="showTripStatus()">Ongoing Trip</button>
+          <button type="button" class="list-group-item list-group-item-primary" (click)="logout()">Logout</button>
+
+      </div>
+  </div>
+  <div class="col-xs-1"></div>
+  <div class="col-xs-8">
+      <app-about-driver *ngIf="showAboutDriverComp"></app-about-driver>
+      <app-past-trips *ngIf="showPastTripsComp"></app-past-trips>
+      <app-transit *ngIf="showTripStatusComp"></app-transit>
+  </div>
+</div>

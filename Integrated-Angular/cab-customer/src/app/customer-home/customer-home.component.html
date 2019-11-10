@@ -1,0 +1,122 @@
+<div class="row">
+  <div class="col-xs-3">
+    <div class="list-group">
+      <button type="button" class="list-group-item list-group-item-primary" (click)="showBooking()"> Your Cab<span
+          class="caret"></span></button>
+      <button type="button" class="list-group-item list-group-item-primary" (click)="showPastTrips()">View Past
+        Trips<span class="caret"></span></button>
+      <button type="button" class="list-group-item list-group-item-primary" (click)="logout()">Logout<span
+          class="caret"></span></button> 
+    </div>
+  </div>
+  <!-- <div class="row"> -->
+  <div class="col-xs-6" *ngIf="showPastTripsComp">
+    <div class="card" style="width: 80rem;" style="background-color: rgba(123, 123, 123, .3);">
+      <div class="card-body">
+        <table class="table table-hover">
+          <tbody>
+            <tr class="active">
+              <th scope="row">Booking ID</th>
+              <th scope="row">Source</th>
+              <th scope="row">Destination</th>
+              <th scope="row">Driver ID</th>
+              <th scope="row">Price</th>
+              <th scope="row">Rating</th>
+              <th></th>
+            </tr>
+            <tr class="success" *ngFor="let p of pastTrips">
+              <td>{{p.bookingId}}</td>
+              <td>{{p.source}}</td>
+              <td>{{p.destination}}</td>
+              <td>{{p.driverId}}</td>
+              <td>Rs. {{p.fare}}</td>
+              <td>{{p.rating}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
+  <div class="col-xs-6 well well-lg" name="form-div" *ngIf="showBookingComp">
+    <form class="form-horizontal" #tripForm="ngForm" (ngSubmit)="estimatePrice()">
+
+      <div class="form-group">
+        <label for="source" class="control-label col-sm-4">Source</label>
+        <div class="col-sm-6">
+          <select class="form-control" #source=ngModel [(ngModel)]=tripdetails.source name="source">
+            <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+          </select>
+        </div>
+        <span *ngIf=" source.touched && source.invalid " class="alert-warning">Invalid Source</span>
+      </div>
+      <div class="form-group">
+        <label for="destination" class="control-label col-sm-4">Destination</label>
+        <div class="col-sm-6">
+          <select class="form-control" #destination=ngModel [(ngModel)]=tripdetails.destination name="destination">
+            <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+          </select>
+          <span *ngIf="destination.dirty && tripdetails.source===tripdetails.destination" class="alert-warning">Source
+            and Destination can't be same!</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="cartype" class="control-label col-sm-4">Model</label>
+        <div class="col-sm-6">
+          <input type="radio" id="cartype-mini" value="mini" name="cartype" #cartype=ngModel ngModel
+            [(ngModel)]=tripdetails.model required> Mini
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" id="cartype-micro" value="micro" name="cartype" #cartype=ngModel ngModel
+            [(ngModel)]=tripdetails.model required> Micro
+          <br>
+          <input type="radio" id="cartype-sedan" value="sedan" name="cartype" #cartype=ngModel ngModel
+            [(ngModel)]=tripdetails.model required> Sedan
+          &nbsp;&nbsp;&nbsp;
+          <input type="radio" id="cartype-suv" value="suv" name="cartype" #cartype=ngModel ngModel
+            [(ngModel)]=tripdetails.model> SUV
+        </div>
+        <div *ngIf="cartype.required">Model is required</div>
+      </div>
+      <div class="col-sm-5"></div>
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-2">
+        <button class="btn btn-success" type="submit"
+          [disabled]="!tripForm.valid || tripdetails.source===tripdetails.destination">Estimate Price</button>
+      </div>
+    </form>
+  </div>
+  <div class="col-xs-2"></div>
+</div>
+<div class="row">
+  <div class="col-xs-2"></div>
+  <div class="col-xs-8" *ngIf="showPriceComp">
+    <div class="card" style="width: 80rem;" style="background-color: rgba(123, 123, 123, .3);">
+      <div class="card-body">
+        <table class="table table-hover">
+          <tbody>
+            <tr class="active">
+              <th scope="row">Name</th>
+              <th scope="row">Source</th>
+              <th scope="row">Destination</th>
+              <th scope="row">Model</th>
+              <th scope="row">Estimated Price</th>
+              <th></th>
+            </tr>
+            <tr class="success">
+              <td>{{customer.name}}</td>
+              <td>{{tripdetails.source}}</td>
+              <td>{{tripdetails.destination}}</td>
+              <td>{{tripdetails.model}}</td>
+              <td>Rs. {{fare}}</td>
+              <td><button class="btn btn-primary" (click)="onConfirm()">Confirm Booking</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-2"></div>
+</div>

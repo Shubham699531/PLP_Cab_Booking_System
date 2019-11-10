@@ -1,0 +1,31 @@
+<div class="card" style="width:300px; position:sticky; left:100px">
+  <form (ngSubmit)='checkBalance()'>
+
+    <table class="table table-hover">
+      <tr>
+        <th>Customer ID</th>
+        <td>{{book.customerId}}</td>
+      </tr>
+      <tr>
+        <th>Booking ID</th>
+        <td>{{book.bookingId}}</td>
+      </tr>
+      <tr>
+        <th>Driver ID</th>
+        <td>{{book.driverId}}</td>
+      </tr>
+      <tr>
+        <th>Final Fare</th>
+        <td>{{book.finalFare}}</td>
+      </tr>
+      <tr>
+        <div [hidden]="found">
+          <button type="submit" class="btn btn-success">PAY</button>
+          <div [hidden]="!found">
+            <button type="submit" class="btn btn-success">ADD & PAY</button></div>
+        </div>
+      </tr>
+    </table>
+
+  </form>
+</div>
