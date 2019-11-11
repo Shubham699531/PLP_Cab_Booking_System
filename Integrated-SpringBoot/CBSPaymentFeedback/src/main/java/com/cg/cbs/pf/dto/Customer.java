@@ -1,5 +1,11 @@
 package com.cg.cbs.pf.dto;
 
+/**
+ * This is the bean class for Customer entity.
+ * @author Anchita Roy
+ * @version 1.0
+ */
+
 import java.util.Date;
 
 import javax.persistence.Column;

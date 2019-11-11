@@ -1,5 +1,11 @@
 package com.cg.cbs.pf.exception;
 
+/**
+ * This is the exception class for handling scenarios when invalid details are passed.
+ * @author Anchita Roy
+ * @version 1.0
+ */
+
 public class InvalidDetailsException extends Exception {
 
 	public InvalidDetailsException() {

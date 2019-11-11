@@ -27,10 +27,10 @@ public class Customer {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public int getCustomerId() {
+	public int getId() {
 		return customerId;
 	}
-	public void setCustomerId(int id) {
+	public void setId(int id) {
 		this.customerId = id;
 	}
 	public String getName() {

@@ -1,5 +1,11 @@
 package com.cg.cbs.pf.exception;
 
+/**
+ * This is the exception class for handling insufficient wallet balance cases during transactions.
+ * @author Anchita Roy
+ * @version 1.0
+ */
+
 public class InsufficientWalletBalanceException extends Exception {
 
 	public InsufficientWalletBalanceException() {

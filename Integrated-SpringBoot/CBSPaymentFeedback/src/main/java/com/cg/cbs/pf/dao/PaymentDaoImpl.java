@@ -1,7 +1,14 @@
 package com.cg.cbs.pf.dao;
 
+/**
+ * This is the dao layer implementation class for payments updation.
+ * @author Anchita Roy
+ * @version 1.0
+ */
+
 import javax.persistence.EntityManager;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -16,12 +23,13 @@ public class PaymentDaoImpl implements PaymentDao {
 
 	@Autowired
 	private EntityManager mgr;
+	
+	static Logger daoLogger = Logger.getLogger(PaymentDaoImpl.class);
 
 	@Override
 	public Payment add(Booking booking) throws InsufficientWalletBalanceException, InvalidDetailsException {
 		Payment payment = new Payment();
-//		TripDetails tripDetails = new TripDetails();
-		
+
 		int pCustId = booking.getCustomerId();
 		int pDriverId = booking.getDriverId();
 		int pBookingId = booking.getBookingId();
@@ -32,21 +40,19 @@ public class PaymentDaoImpl implements PaymentDao {
 		payment.setBookingId(pBookingId);
 		payment.setFinalFare(pFinalFare);
 		
-//		tripDetails.setCustomerId(pCustId);
-//		tripDetails.setDriverId(pDriverId);
-//		tripDetails.setBookingId(pBookingId);
-//		tripDetails.setFinalFare(pFinalFare);
-//		mgr.persist(tripDetails);
-		
 		mgr.persist(payment);
+		daoLogger.info("Transaction successfully updated to Payments.");
 		return payment;
 	}
 
 	@Override
 	public Customer findCustById(int id) throws InvalidDetailsException {
 		Customer customer = (Customer) mgr.find(Customer.class, id);
-		if (customer == null)
+		if (customer == null) {
+			daoLogger.error("Customer not found with these booking details.");
 			throw new InvalidDetailsException("Invalid customer ID passed: " + id);
+		}
+		daoLogger.info("Customer successfully found.");
 		return customer;
 	}
 	

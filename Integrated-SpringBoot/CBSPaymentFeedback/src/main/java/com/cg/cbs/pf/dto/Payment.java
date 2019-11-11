@@ -1,5 +1,11 @@
 package com.cg.cbs.pf.dto;
 
+/**
+ * This is the bean class for Payment entity.
+ * @author Anchita Roy
+ * @version 1.0
+ */
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

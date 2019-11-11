@@ -12,6 +12,12 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import com.cg.cbs.pf.exception.InsufficientWalletBalanceException;
 import com.cg.cbs.pf.exception.InvalidDetailsException;
 
+/**
+ * This is rest exception handler class for handling global exceptions of all kinds.
+ * @author Anchita Roy
+ * @version 1.0
+ *
+ */
 
 @Order(Ordered.HIGHEST_PRECEDENCE)
 @ControllerAdvice
