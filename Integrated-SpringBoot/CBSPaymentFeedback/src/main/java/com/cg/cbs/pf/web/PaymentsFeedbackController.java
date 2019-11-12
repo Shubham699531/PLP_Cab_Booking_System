@@ -26,7 +26,7 @@ import com.cg.cbs.pf.exception.InvalidDetailsException;
 import com.cg.cbs.pf.service.PaymentFeedbackService;
 import com.cg.cbs.pf.service.PaymentFeedbackServiceImpl;
 
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/paymentsfeedback")
 public class PaymentsFeedbackController {

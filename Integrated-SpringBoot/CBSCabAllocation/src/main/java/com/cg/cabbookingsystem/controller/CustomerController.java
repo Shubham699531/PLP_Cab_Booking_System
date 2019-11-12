@@ -54,7 +54,11 @@ public class CustomerController {
 		myLogger.info("Customer " + req.getCustomerId() + "requested a cab");
 		return service.getNearByVehicles(req);
 	}
-	
+	//http://localhost:8082/customer/nearByVehicle
+		@GetMapping(value = "/getBookingForCustomer", consumes = "application/json", produces = "application/json")
+		public Booking getBookingForCustomer(@RequestParam int customerId) {
+			return service.getBookingForCustomer(customerId);
+		}
 	/**
 	 * Get the booking details to the database
 	 * @param Booking

@@ -25,10 +25,10 @@ public class Vehicle {
 	public void setVehicleNo(String vehicleNo) {
 		this.vehicleNo = vehicleNo;
 	}
-	public int getSize() {
+	public int getCategoryId() {
 		return categoryId;
 	}
-	public void setSize(int size) {
+	public void setCategoryId(int size) {
 		this.categoryId = size;
 	}
 	public String getModel() {

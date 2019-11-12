@@ -109,3 +109,776 @@
 [http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 0 at 1573410037487
 [http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 0
 [http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 456
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573451474635 is :1
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573451912074 is :0
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573452146426 is :1
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573452229005 is :1
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573452379146 is :0
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573452543623 is :0
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573452695291 is :0
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573452839558 is :0
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573453007767 is :1
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 2
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 2
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 2
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 2
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-2] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-10] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 52 at 1573454840814
+[http-nio-8882-exec-7] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 52 at 1573454840830
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 52 at 1573454981023
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 52 at 1573454981053
+[http-nio-8882-exec-10] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-7] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 52 at 1573455335603
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 52 at 1573455335622
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-7] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 52 at 1573455413507
+[http-nio-8882-exec-2] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 52 at 1573455413541
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-10] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Finding customer details for driver with driverId: 2
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-7] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Finding customer details for driver with driverId: 52
+[http-nio-8882-exec-2] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: No query defined for that name [getCustomerById]
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Finding customer details for driver with driverId: 52
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: No query defined for that name [getCustomerById]
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Finding customer details for driver with driverId: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 52 at 1573456340018
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 52 at 1573456340040
+[http-nio-8882-exec-2] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Finding customer details for driver with driverId: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Finding customer details for driver with driverId: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-7] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Finding customer details for driver with driverId: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: No entity found for query
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-7] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-2] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Finding customer details for driver with driverId: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-2] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-5] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-10] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-5] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-10] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-7] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-10] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 52 at 1573462041743
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: No entity found for query
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 52 at 1573462059025
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: No entity found for query
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 52 at 1573462102517
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Shubham
+[http-nio-8882-exec-2] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Shubham with messsage: No entity found for query
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@gmail.com
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573462782149 is :0
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573462929253 is :0
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573463108070 is :1
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573463197931 is :1
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 2
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-10] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 2
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573463401804 is :1
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 3
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573463586898 is :1
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-7] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 4
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573463658384 is :1
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 5
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 5
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 5
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 5
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 5
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 5
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 5
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 5
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 52
+[http-nio-8882-exec-5] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 52 Exception thrown: query did not return a unique result: 5
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@def.com
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Aftab
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Aftab with messsage: No entity found for query
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 102
+[http-nio-8882-exec-1] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 102 Exception thrown: No entity found for query
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 102
+[http-nio-8882-exec-10] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 102 Exception thrown: No entity found for query
+[http-nio-8882-exec-2] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 0 at 1573468625670
+[http-nio-8882-exec-2] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 0
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 0 at 1573468625708
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 0
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 102
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 102 Exception thrown: No entity found for query
+[http-nio-8882-exec-5] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 102
+[http-nio-8882-exec-5] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 102 Exception thrown: No entity found for query
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@def.com
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 102
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 102 Exception thrown: No entity found for query
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 102
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 102 Exception thrown: No entity found for query
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Aftab
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@def.com
+[http-nio-8882-exec-10] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Aftab with messsage: No entity found for query
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - No. of vehicles free at current time : 1573470412524 is :2
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 102
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 102 Exception thrown: query did not return a unique result: 2
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Aftab
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@def.com
+[http-nio-8882-exec-7] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Aftab with messsage: No entity found for query
+[http-nio-8882-exec-10] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: Aftab
+[http-nio-8882-exec-10] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - Exception occured when email entered is : Aftab with messsage: No entity found for query
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@def.com
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 102
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 102 Exception thrown: query did not return a unique result: 2
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 102
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 102 Exception thrown: query did not return a unique result: 2
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@def.com
+[http-nio-8882-exec-8] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 102
+[http-nio-8882-exec-8] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 102 Exception thrown: query did not return a unique result: 2
+[http-nio-8882-exec-9] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 102
+[http-nio-8882-exec-9] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 102 Exception thrown: query did not return a unique result: 2
+[http-nio-8882-exec-1] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Fetching details of driver with e-mail Id: abc@def.com
+[http-nio-8882-exec-3] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 0 at 1573472132985
+[http-nio-8882-exec-3] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 0
+[http-nio-8882-exec-4] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting no. of past rides of driver with driverId : 0 at 1573472133034
+[http-nio-8882-exec-4] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No past rides found for driver with driver Id: 0
+[http-nio-8882-exec-6] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 102
+[http-nio-8882-exec-6] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 102 Exception thrown: query did not return a unique result: 2
+[http-nio-8882-exec-7] DEBUG com.cg.cabbookingsystem.controller.DriverController  - Getting booking details for driver with driver Id: 102
+[http-nio-8882-exec-7] WARN  com.cg.cabbookingsystem.repo.DriverRepoImpl  - No bookings for driver Id: 102 Exception thrown: query did not return a unique result: 2

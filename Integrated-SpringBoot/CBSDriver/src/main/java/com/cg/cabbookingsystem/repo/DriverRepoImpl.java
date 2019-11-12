@@ -43,10 +43,11 @@ public class DriverRepoImpl implements DriverRepo {
 	public Driver getOneDriver(List<Vehicle> vehicles) {
 		ArrayList<Driver> drivers = new ArrayList<Driver>();
 		Driver driver = new Driver();
+		System.out.println("JHJHJH" + vehicles.size());
 		for (Vehicle vehicle : vehicles) {
 			drivers.add(mgr.createNamedQuery("fetchDriverByVehicleNo", Driver.class).setParameter("vehicleNo", vehicle.getVehicleNo()).getSingleResult());
 		}
-		
+		System.out.println("YJjh" + drivers.size());
 		driver = drivers.get(0);
 		mgr.createNamedQuery("updateDriverStatus").setParameter("status","Booked").setParameter("id", driver.getDriverId());
 		driver.setDriverStatus("Booked");
@@ -107,10 +108,13 @@ public class DriverRepoImpl implements DriverRepo {
 	@Override
 	public Customer searchForBooking(int driverId) throws NoBookingFoundException{
 		Customer customer = null;
+		System.out.println(driverId);
 		Booking booking = mgr.createNamedQuery("searchBookingDetails", Booking.class).setParameter("driverId", driverId).getSingleResult();
+		System.out.println(booking.getBookingId());
 		if(booking != null) {
 			try {
 				customer = mgr.createNamedQuery("getCustomerById", Customer.class).setParameter("customerId", booking.getCustomerId()).getSingleResult();
+				System.out.println(customer.getName());
 			} catch (Exception e) {
 				myLogger.warn("No bookings for driver Id: " + driverId + " Exception thrown: " + e.getMessage() );
 				throw new NoBookingFoundException("No bookings found for Id: " + driverId);

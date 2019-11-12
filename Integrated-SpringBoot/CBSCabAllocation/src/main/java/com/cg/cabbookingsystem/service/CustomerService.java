@@ -61,4 +61,6 @@ public interface CustomerService {
 	public Location getLocationByName(String locationName);
 	
 	public Booking checkRatedStatus(@RequestParam int customerId);
+
+	public Booking getBookingForCustomer(int customerId);
 }

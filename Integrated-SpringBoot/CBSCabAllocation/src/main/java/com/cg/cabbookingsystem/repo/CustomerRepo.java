@@ -60,4 +60,6 @@ public interface CustomerRepo {
 	 * @return
 	 */
 	public Booking checkRatedStatus(@RequestParam int customerId);
+
+	Booking getBookingForCustomer(int customerId);
 }

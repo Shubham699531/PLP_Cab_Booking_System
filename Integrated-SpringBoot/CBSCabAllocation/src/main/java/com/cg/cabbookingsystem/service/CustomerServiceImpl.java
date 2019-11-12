@@ -54,7 +54,7 @@ public class CustomerServiceImpl implements CustomerService {
 			System.out.println("%%%%" + vehicle.getVehicleNo());
 			double distance = calculateDistance(req.getSource(), req.getDestination());
 			System.out.println("&&&&" + distance);
-			if(distance <= 23)
+			if(distance <= 200)
 				nearByVehicles.add(vehicle);
 		}
 		return nearByVehicles;
@@ -91,7 +91,6 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public int estimateTime(CustomerRequest req) {
 		double distance = calculateDistance(req.getSource(), req.getDestination());
-		System.out.println("DDDDDDD" + distance);
 		return (int) (distance*60/40);
 	}
 
@@ -99,7 +98,6 @@ public class CustomerServiceImpl implements CustomerService {
 	public double calculateDistance(String source, String destination) {
 		Location src = repo.getLocationByName(source);
 		Location dest = repo.getLocationByName(destination);
-		System.out.println("$$$$$"+ source + "&&&"  + destination);
 		return Math.hypot((src.getxCoordinate()-dest.getxCoordinate()), (src.getyCoordinate()-dest.getyCoordinate()));
 	}
 
@@ -111,6 +109,11 @@ public class CustomerServiceImpl implements CustomerService {
 	@Override
 	public Booking checkRatedStatus(int customerId) {
 		return repo.checkRatedStatus(customerId);
+	}
+
+	@Override
+	public Booking getBookingForCustomer(int customerId) {
+		return repo.getBookingForCustomer(customerId);
 	}
 
 }

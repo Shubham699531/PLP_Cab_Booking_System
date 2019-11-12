@@ -50,7 +50,7 @@ public class CabDaoImpl implements ICabDao {
 
 	@Override
 	public Vehicle saveVehicle(Vehicle vehicle) {
-		System.out.println(vehicle.getVehicleNo()+ vehicle.getSize()+vehicle.getStatus()+vehicle.getLocation());
+		System.out.println(vehicle.getVehicleNo()+ vehicle.getCategoryId()+vehicle.getStatus()+vehicle.getLocation());
 //		if(vehicle.getModel().equals("mini")){
 //			vehicle.setSize(1);
 //		    }

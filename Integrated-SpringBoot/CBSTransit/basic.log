@@ -1,0 +1,19 @@
+2019-11-11 12:45:30,794-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Started
+2019-11-11 12:45:32,690-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Ended
+2019-11-11 12:50:37,870-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Started
+2019-11-11 12:50:42,155-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Ended
+2019-11-11 13:40:34,761-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Started
+2019-11-11 13:40:38,178-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Ended
+2019-11-11 13:42:17,019-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Status changed to rated
+2019-11-11 13:42:17,099-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Driver with driverId 52 found
+2019-11-11 13:42:17,100-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Driver Rating and status updated
+2019-11-11 13:42:17,147-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Vehicle with vehicle no. MHJ123 found
+2019-11-11 13:42:17,147-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Vehicle status and location updated
+2019-11-11 13:42:17,147-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Pricing for category Id 1 found
+2019-11-11 13:42:17,147-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Rated
+2019-11-11 14:16:45,546-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Started
+2019-11-11 14:16:56,378-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Ended
+2019-11-11 14:17:24,182-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Started
+2019-11-11 14:17:26,209-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Ended
+2019-11-11 17:06:01,259-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Started
+2019-11-11 17:06:23,186-INFO -com.cg.cabbookingsystem.service.TransitServiceImpl:Trip Ended

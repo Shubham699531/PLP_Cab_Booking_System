@@ -67,16 +67,16 @@ class CabBookingApplicationTests {
 	public void testSaveBooking() {
 		Booking book = new Booking();
 	
-		book.setCustomerId(1011);
+		book.setCustomerId(53);
 		book.setDestination("Ghatkopar");
-		book.setDriverId(1011);
+		book.setDriverId(102);
 		book.setDriverStatus("Free");
 		book.setEstimatedFare(250.0);
-		book.setEstimatedTime(35);
-		book.setFinalFare(300.0);
-		book.setFinalTime(36);
-		book.setRating(3);
-		book.setTripStatus("Over");
+		book.setEstimatedTime(3);
+		book.setFinalFare(0.0);
+		book.setFinalTime(0);
+		book.setRating(0);
+		book.setTripStatus("confirmed");
 		book.setSource("Andheri");
 
 		                                

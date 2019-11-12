@@ -8,6 +8,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.SequenceGenerator;
 
 @Entity
+@NamedQuery(name="getBookingForCustomer", query = "FROM Booking WHERE customerId=:customerId")
 @NamedQuery(name = "checkRatedBookingStatus", query = "FROM Booking WHERE customerId=:customerId AND tripStatus='completed'")
 @NamedQuery(name = "searchBookingDetails", query = "FROM Booking WHERE driverId=:driverId ")
 @NamedQuery(name = "getPastRidesOfCustomer", query = "FROM Booking WHERE customerId=:customerId AND tripStatus='rated'")

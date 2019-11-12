@@ -79,4 +79,9 @@ public class CustomerRepoImpl implements CustomerRepo {
 	public Booking checkRatedStatus(@RequestParam int customerId) {
 		return mgr.createNamedQuery("checkRatedBookingStatus", Booking.class).setParameter("customerId", customerId).getSingleResult();
 	}
+
+	@Override
+	public Booking getBookingForCustomer(int customerId) {
+		return mgr.createNamedQuery("getBookingForCustomer", Booking.class).setParameter("customerId", customerId).getSingleResult();
+	}
 }

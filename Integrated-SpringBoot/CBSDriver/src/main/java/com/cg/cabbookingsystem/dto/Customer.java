@@ -9,6 +9,7 @@ import javax.persistence.NamedQuery;
 
 @Entity
 @NamedQuery(name = "fetchCustomerByEmail",query = "FROM Customer WHERE email=:email")
+@NamedQuery(name = "getCustomerById", query = "FROM Customer WHERE customerId=:customerId")
 public class Customer {
 
 	@Id
@@ -41,10 +42,10 @@ public class Customer {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public int getId() {
+	public int getCustomerId() {
 		return customerId;
 	}
-	public void setId(int id) {
+	public void setCustomerId(int id) {
 		this.customerId = id;
 	}
 	public String getName() {
